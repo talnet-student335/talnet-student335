@@ -8,7 +8,7 @@
     <script type="text/javascript" src="./wicket/resource/nl.topicus.cobra.web.components.choice.AbstractAjaxDropDownChoice/dropdownchoice-ver-1574233124000.js"></script>
     <script type="text/javascript" id="wicket-ajax-base-url">
         /*<![CDATA[*/
-        Wicket.Ajax.baseUrl="agenda?9";
+        Wicket.Ajax.baseUrl="agenda.html?9";
         /*]]>*/
     </script>
     <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.panel.SidebarPanel/slidebar-ver-1576677976000.js"></script>
@@ -19,15 +19,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="apple-mobile-web-app-title" content="EduArte Portalen" />
     <link rel="apple-touch-icon" sizes="180x180"
-          href="/assets/img/apple-touch-icon.png">
+          href="/eduarte/assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-          href="/assets/img/favicon-32x32.png">
+          href="/eduarte/assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-          href="/assets/img/favicon-16x16.png">
-    <link rel="manifest" href="/assets/img/site.webmanifest">
-    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg"
+          href="/eduarte/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/eduarte/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/eduarte/assets/img/safari-pinned-tab.svg"
           color="#5bbad5">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="shortcut icon" href="/eduarte/assets/img/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config"
           content="/assets/img/browserconfig.xml">
@@ -45,32 +45,32 @@
             $('#idba').menuToggle();;
             $('#idbb').menuToggle();;
             $('#idbc').dropDownChoice({autoselect: false, ajax: function () {
-                    var attrs = {"u":"./agenda?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"idbc","dep":[function(attrs){return Wicket.Form.serializeElement('idbc')}]};
+                    var attrs = {"u":"./agenda.html?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"idbc","dep":[function(attrs){return Wicket.Form.serializeElement('idbc')}]};
                     var params = [];
                     attrs.ep = params.concat(attrs.ep || []);
                     Wicket.Ajax.ajax(attrs);
                 }
             });;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"idbc","dep":[function(attrs){return Wicket.Form.serializeElement('idbc')}],"e":"change"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"idbc","dep":[function(attrs){return Wicket.Form.serializeElement('idbc')}],"e":"change"});;
             $('#idbd').dropDownChoice({autoselect: false, ajax: function () {
-                    var attrs = {"u":"./agenda?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"idbd","dep":[function(attrs){return Wicket.Form.serializeElement('idbd')}]};
+                    var attrs = {"u":"./agenda.html?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"idbd","dep":[function(attrs){return Wicket.Form.serializeElement('idbd')}]};
                     var params = [];
                     attrs.ep = params.concat(attrs.ep || []);
                     Wicket.Ajax.ajax(attrs);
                 }
             });;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"idbd","dep":[function(attrs){return Wicket.Form.serializeElement('idbd')}],"e":"change"});;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.0-sidebar-sidebarContent-0-content-form-zoeken","m":"POST","c":"idbf","f":"idbe","sc":"zoeken","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"idbd","dep":[function(attrs){return Wicket.Form.serializeElement('idbd')}],"e":"change"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-sidebar-sidebarContent-0-content-form-zoeken","m":"POST","c":"idbf","f":"idbe","sc":"zoeken","e":"click"});;
             $('#idc0').datepicker({onClose: function(dateText, inst) {
                     $(this).blur();
                 }, dateFormat: 'dd-mm-yy'});;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.0-filter-datum","m":"POST","c":"idc0","e":"change"});;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.0-filter-weergaveKiezer-choicesContainer-enumHiddenField","m":"POST","c":"idc1","e":"change"});;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.0-agenda-dagenPanel-dagen-1-afspraken-0","c":"idc2","e":"click"});;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.0-agenda-dagenPanel-dagen-2-afspraken-0","c":"idc3","e":"click"});;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.0-agenda-dagenPanel-dagen-3-afspraken-0","c":"idc4","e":"click"});;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.0-agenda-dagenPanel-dagen-4-afspraken-0","c":"idc5","e":"click"});;
-            Wicket.Ajax.ajax({"u":"./agenda?9-2.0-agenda-dagenPanel-dagen-5-afspraken-0","c":"idc6","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-filter-datum","m":"POST","c":"idc0","e":"change"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-filter-weergaveKiezer-choicesContainer-enumHiddenField","m":"POST","c":"idc1","e":"change"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-1-afspraken-0","c":"idc2","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-2-afspraken-0","c":"idc3","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-3-afspraken-0","c":"idc4","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-4-afspraken-0","c":"idc5","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-5-afspraken-0","c":"idc6","e":"click"});;
             $(window).scroll(function () {$('.lead').animate({ top: $(this).scrollTop() - 45 }, { duration: 0, queue: false }); });;
             Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
             ;});
@@ -92,7 +92,7 @@
 
                 <li>
 
-                    <a href="." title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
+                    <a href=".." title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
 
 
                 </li><li class="is-selected">
@@ -102,22 +102,17 @@
 
             </li><li>
 
-                <a href="overzicht.presentie.html" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
+                <a href="./presentie.overzicht/overzicht.html" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
 
 
             </li><li>
 
-                <a href="./stage.html" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
+                <a href="stage.html" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
 
 
             </li><li>
 
-                <a href="./studie.html" title="Studie"><i class="flaticon building-1"></i>Studie</a>
-
-
-            </li><li>
-
-
+                <a href="./opleiding/opleiding.html" title="Studie"><i class="flaticon building-1"></i>Studie</a>
 
 
             </li><li>
@@ -127,7 +122,12 @@
 
             </li><li>
 
-                <a href="./werklijst.html" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
+
+
+
+            </li><li>
+
+                <a href="werklijst.html" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
 
 
             </li><li>
@@ -137,7 +137,7 @@
 
             </li><li>
 
-                <a href="./resultaten.html" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
+                <a href="resultaten.html" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
 
 
             </li>
@@ -147,11 +147,11 @@
         <div class="navigation-footer">
             <ul>
                 <li>
-                    <a href="./account" title="Profiel">
+                    <a href="account.html" title="Profiel">
                         <i class="flaticon user-2"></i>
                     </a>
                 </li><li>
-                <a href="./agenda?9-2.-menu-footer-2-uitloggen" title="Uitloggen">
+                <a href="./agenda.html?9-2.-menu-footer-2-uitloggen" title="Uitloggen">
                     <i class="flaticon logout"></i>
                 </a>
             </li>
@@ -187,7 +187,7 @@
                 <div class="s5-filterbar-container" id="idb8">
 
                     <h2>Filter</h2>
-                    <form id="idbe" method="post" action="./agenda?9-2.-sidebar-sidebarContent-0-content-form"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"/><input type="submit" tabindex="-1" name="zoeken" onclick=" var b=document.getElementById('idbf'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = Wicket.bind(b.onclick, b)(); if (r != false) b.click(); } else { b.click(); };  return false;"  /></div>
+                    <form id="idbe" method="post" action="./agenda.html?9-2.-sidebar-sidebarContent-0-content-form"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"/><input type="submit" tabindex="-1" name="zoeken" onclick=" var b=document.getElementById('idbf'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = Wicket.bind(b.onclick, b)(); if (r != false) b.click(); } else { b.click(); };  return false;"  /></div>
 
 
                         <fieldset>
@@ -263,8 +263,8 @@
                 <div class="agenda-filter time-filter">
                     <div class="filter--inner">
                         <div style="margin: auto 0px; display: flex">
-                            <a class="time-filter--left" href="./agenda?9-2.-filter-terug"><i class="flaticon left-square-1"></i></a>
-                            <a class="time-filter--right" href="./agenda?9-2.-filter-vooruit"><i class="flaticon right-square-1"></i></a>
+                            <a class="time-filter--left" href="./agenda.html?9-2.-filter-terug"><i class="flaticon left-square-1"></i></a>
+                            <a class="time-filter--right" href="./agenda.html?9-2.-filter-vooruit"><i class="flaticon right-square-1"></i></a>
                         </div>
                         <div class="popover--field datepicker">
                             <i class="flaticon calendar-2 datepicker"></i>

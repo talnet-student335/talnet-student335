@@ -2,28 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cb7f331-e17c-4c45-8163-098d61790243" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.cobra.web.behaviors.ServerCallAjaxBehaviour/servercall-ver-1574233124000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.cobra.web.components.ajax.LazyLoaderResourceReference/jquery.lazyloader-ver-1574233124000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.cobra.web.components.beyonddatapanel.ScrollingBeyondDataPanel/beyonddatapanel-ver-1574233130000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.cobra.web.components.choice.AbstractAjaxDropDownChoice/dropdownchoice-ver-1574233124000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.cobra.web.components.wiquery.multiselect.MultiSelectDropDownChoice/jquery.multiselect-ver-1574233122000.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.cobra.web.components.wiquery.multiselect.MultiSelectDropDownChoice/jquery.multiselect-ver-1574233124000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.cobra.web.components.wiquery.resources.ResourceRefUtil/jquery.timers-1.1.3-ver-1574233124000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.cobra.web.components.wiquery.resources.ResourceRefUtil/json2-ver-1574233124000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.behaviors.SortableColumnsBehavior/SortColumn-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.components.chartjs.ChartJsPanel$ChartJsPanelResourceReference/ChartJsPanel-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.components.chartjs.ChartJsResourceReference/chartjs-2.2.1-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.components.form.BooleanEditPanel/BooleanEditPanel-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.components.form.EnumEditPanel/EnumEditPanel-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.components.menu.AbstractSubMenu/SubMenuHeaderTabs-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.components.panel.SidebarPanel/slidebar-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.components.panel.resultaten.ResultatenOverzichtPanel/ResultatenOverzichtPanel-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.components.panel.resultaten.ResultatenOverzichtPanel/jquery.jcarousel.min-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.eduario.web.components.wiquery.JQueryTouchPunchResourceReference/jquery.ui.touch-punch-ver-1576677976000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/org.wicketstuff.wiquery.ui.JQueryUIJavaScriptResourceReference/jquery-ui-ver-1533200756000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wicket/resource/org.wicketstuff.wiquery.ui.datepicker.DatePickerLanguageResourceReference/i18n/datepicker-nl-ver-1533200756000.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algemeneinformatie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/personalia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wicket/resource/nl.topicus.cobra.web.components.wiquery.auto.QuickSearchField/quicksearch-ver-1574233124000.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studie.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda.html" beforeDir="false" afterPath="$PROJECT_DIR$/agenda.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opleiding/documenten.html" beforeDir="false" afterPath="$PROJECT_DIR$/opleiding/documenten.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opleiding/dossier.html" beforeDir="false" afterPath="$PROJECT_DIR$/opleiding/dossier.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opleiding/groepen.html" beforeDir="false" afterPath="$PROJECT_DIR$/opleiding/groepen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opleiding/inloopcolleges.html" beforeDir="false" afterPath="$PROJECT_DIR$/inloopcolleges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opleiding/keuzevakken.html" beforeDir="false" afterPath="$PROJECT_DIR$/opleiding/keuzevakken.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opleiding/opleiding.html" beforeDir="false" afterPath="$PROJECT_DIR$/opleiding/opleiding.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opleiding/toetsmomenten.html" beforeDir="false" afterPath="$PROJECT_DIR$/toetsmomenten.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opleiding/vakken.html" beforeDir="false" afterPath="$PROJECT_DIR$/opleiding/vakken.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentie.overzicht/absentie.html" beforeDir="false" afterPath="$PROJECT_DIR$/presentie.overzicht/absentie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentie.overzicht/overzicht.html" beforeDir="false" afterPath="$PROJECT_DIR$/presentie.overzicht/overzicht.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentie.overzicht/presentie.html" beforeDir="false" afterPath="$PROJECT_DIR$/presentie.overzicht/presentie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultaten.html" beforeDir="false" afterPath="$PROJECT_DIR$/resultaten.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stage.html" beforeDir="false" afterPath="$PROJECT_DIR$/stage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werklijst.html" beforeDir="false" afterPath="$PROJECT_DIR$/werklijst.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1VTSVRCsQUUM9OFb6zjVl9MQEvH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -65,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hello\PhpstormProjects\educus" />
       <recent name="C:\Users\hello\PhpstormProjects\educus\wicket\resource" />
       <recent name="C:\Users\hello\PhpstormProjects\educus\assets\img" />
     </key>
@@ -94,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577275614778</updated>
-      <workItem from="1577275615932" duration="4662000" />
+      <workItem from="1577275615932" duration="7352000" />
     </task>
     <servers />
   </component>
@@ -109,14 +111,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1577280037433" />
+    <state x="393" y="28" key="CommitChangelistDialog2" timestamp="1577280636230">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="393" y="28" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1577280636230" />
     <state x="277" y="76" key="SettingsEditor" timestamp="1577275618596">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1577275618596" />
-    <state x="425" y="197" key="run.anything.popup" timestamp="1577278278824">
+    <state x="578" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577280645430">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1577278278824" />
+    <state x="578" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1577280645430" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1577281867525">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1577281867525" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1577276153215">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

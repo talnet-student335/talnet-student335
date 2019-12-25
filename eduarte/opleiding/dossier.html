@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript" src="../wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-2.2.4-ver-1526491824000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.wiquery.resources.ResourceRefUtil/jquery.timers-1.1.3-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.beyonddatapanel.ScrollingBeyondDataPanel/beyonddatapanel-ver-1574233130000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-1526491986000.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+        /*<![CDATA[*/
+        Wicket.Ajax.baseUrl="opleiding/dossier.html?61";
+        /*]]>*/
+    </script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.wiquery.resources.ResourceRefUtil/json2-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.behaviors.ServerCallAjaxBehaviour/servercall-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.panel.EduArioFeedbackPanel/eduariofeedbackpanel-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.behaviors.EduArioUIResourceReference/EduArioUI-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.menu.AbstractSubMenu/SubMenuHeaderTabs-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.panel.SidebarPanel/slidebar-ver-1576677976000.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="EduArte Portalen" />
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="/eduarte/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/eduarte/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="/eduarte/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/eduarte/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/eduarte/assets/img/safari-pinned-tab.svg"
+          color="#5bbad5">
+    <link rel="shortcut icon" href="/eduarte/assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config"
+          content="/assets/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="EduArte Portalen" />
+    <meta name="author" content="Iddink Group" />
+    <title>Dossier - EduArte Portalen</title>
+    <!-- Page class: class nl.topicus.eduario.web.pages.studie.dossier.StudieStudentDossierPage -->
+    <link rel="stylesheet" type="text/css" href="../wicket/resource/assets.AssetsResourceReferenceMarker/stylesheets/styles-ver-1576677976000.css" />
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.pages.AbstractEduArioPage/jquery.viewport.mini-ver-1576677976000.js"></script>
+    <script type="text/javascript" >
+        /*<![CDATA[*/
+        Wicket.Event.add(window, "domready", function(event) {
+            $('#id516').beyondData({cacheBodies: 10, topOffset: function() { return jQuery('.header').height() - 0.5; }, viewportPadding: 200, itemsPerPage: 20, itemCount: 1});;
+            $('#id516').bindServerCall({ajax: {"u":"./dossier.html?61-2.0-formulieren","m":"POST","c":"id516"}});;
+            $('#id517').eduArioFeedback();;
+            $('#id518').menuToggle();;
+            $('#id519').headerTabs();;
+            $('#id51a').menuToggle();;
+            Wicket.Ajax.ajax({"u":"./dossier.html?61-2.0-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"id51b","sr":true,"pre":[function(attrs){return attrs.event.target.name === 'fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField'}],"e":"click"});;
+            Wicket.Ajax.ajax({"u":"./dossier.html?61-2.0-sidebar-sidebarContent-0-content-form-zoeken","m":"POST","c":"id51d","f":"id51c","sc":"zoeken","e":"click"});;
+            Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+            ;});
+        /*]]>*/
+    </script>
+</head>
+<body>
+<div class="l-container">
+    <nav class="navigation navigation--student">
+        <div class="navigation-header">
+            <div class="navigation-header--logo">
+                <a><img src="../wicket/resource/assets.AssetsResourceReferenceMarker/img/logo-eduarte-ver-1576677958000.svg" alt="EduArtelogo"/></a>
+            </div>
+            <div class="omgevingIndicator productieomgeving"></div>
+            <i class="navigation-header--close-navigation js-navigation flaticon x-1" id="id518"></i>
+        </div>
+        <div class="navigation-items">
+            <ul class="navigation-items--main">
+
+                <li>
+
+                    <a href="../.." title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
+
+
+                </li><li>
+
+                <a href="../agenda.html" title="Agenda"><i class="flaticon calendar-4"></i>Agenda</a>
+
+
+            </li><li>
+
+                <a href="../presentie.overzicht/overzicht.html" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
+
+
+            </li><li>
+
+                <a href="../stage.html" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
+
+
+            </li><li class="is-selected">
+
+                <a href="./opleiding" title="Studie"><i class="flaticon building-1"></i>Studie</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="../werklijst.html" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="../resultaten.html" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
+
+
+            </li>
+
+            </ul>
+        </div>
+        <div class="navigation-footer">
+            <ul>
+                <li>
+                    <a href="../account.html" title="Profiel">
+                        <i class="flaticon user-2"></i>
+                    </a>
+                </li><li>
+                <a href="./dossier.html?61-2.-menu-footer-2-uitloggen" title="Uitloggen">
+                    <i class="flaticon logout"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="l-flex-content">
+
+        <header class="header">
+            <div class="header-toolbar">
+                <i class="header-toolbar--open-navigation js-navigation flaticon menu-2" id="id51a"></i>
+                <h1>
+
+                    <a href="opleiding.html">
+                        <span class="is-fixed is-lastcrumb">Studie</span>
+                    </a>
+
+                    <i class="flaticon right-2"></i>
+
+
+
+                    <span class="is-fixed is-lastcrumb">Dossier</span>
+
+
+
+                </h1>
+
+            </div>
+            <div class="header-tabs" id="id519">
+                <ul>
+                    <li class="is-selected">
+
+                        <a href="./dossier.html" title="Dossier">Dossier</a>
+
+                    </li><li>
+
+                    <a href="opleiding.html" title="Opleiding">Opleiding</a>
+
+                </li><li>
+
+                    <a href="groepen.html" title="Groepen">Groepen</a>
+
+                </li><li>
+
+
+
+                </li><li>
+
+                    <a href="keuzevakken.html" title="Keuzevakken">Keuzevakken</a>
+
+                </li><li>
+
+                    <a href="../toetsmomenten.html" title="Toetsmomenten">Toetsmomenten</a>
+
+                </li><li>
+
+                    <a href="../inloopcolleges.html" title="Inloopcolleges">Inloopcolleges</a>
+
+                </li><li>
+
+                    <a href="./archief" title="Vakken">Vakken</a>
+
+                </li><li>
+
+                    <a href="documenten.html" title="Documenten">Documenten</a>
+
+                </li>
+                </ul>
+                <span class="header-tabs--toggle">
+		<i class="flaticon menu-2"></i>
+	</span>
+            </div>
+        </header>
+
+        <div class="popover defaultPopoverWidth" id="id51e">
+        </div>
+        <aside class="s5-aside-slidebar">
+            <div id="id51f">
+                <div class="s5-filterbar-toggle js-filterbar-toggle">
+                    <a href="#id515"><i class="icon-filter-1"></i></a>
+                </div>
+                <div class="s5-filterbar-container" id="id515">
+
+                    <h2>Filter</h2>
+                    <form id="id51c" method="post" action="./dossier.html?61-2.-sidebar-sidebarContent-0-content-form"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"/><input type="submit" tabindex="-1" name="zoeken" onclick=" var b=document.getElementById('id51d'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = Wicket.bind(b.onclick, b)(); if (r != false) b.click(); } else { b.click(); };  return false;"  /></div>
+
+
+                        <fieldset>
+
+                            <div id="id520">
+
+
+                                <h5>Type</h5>
+
+
+
+
+
+                                <ul id="id51b" class=""><li><div class="s5-checkbox-item"><input name="fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField" type="checkbox" checked="checked" value="0" id="id51b-fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField_0" class="s5-input-checkbox" wicketpath="sidebar_sidebarContent_0_content_form_fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup__body_formField_input_0"/><label for="id51b-fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField_0" class="s5-input-checkbox-label">Gesprek</label></div></li><li><div class="s5-checkbox-item"><input name="fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField" type="checkbox" checked="checked" value="1" id="id51b-fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField_1" class="s5-input-checkbox" wicketpath="sidebar_sidebarContent_0_content_form_fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup__body_formField_input_1"/><label for="id51b-fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField_1" class="s5-input-checkbox-label">Notitie</label></div></li><li><div class="s5-checkbox-item"><input name="fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField" type="checkbox" checked="checked" value="2" id="id51b-fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField_2" class="s5-input-checkbox" wicketpath="sidebar_sidebarContent_0_content_form_fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup__body_formField_input_2"/><label for="id51b-fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField_2" class="s5-input-checkbox-label">Lesnotitie</label></div></li><li><div class="s5-checkbox-item"><input name="fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField" type="checkbox" checked="checked" value="4" id="id51b-fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField_4" class="s5-input-checkbox" wicketpath="sidebar_sidebarContent_0_content_form_fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup__body_formField_input_3"/><label for="id51b-fieldset_fieldSetMarkup_inputFields_0_controlGroup_controlGroup_body_formField_4" class="s5-input-checkbox-label">Formulier</label></div></li></ul>
+
+
+
+
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <input type="button" class="is-hidden" id="id51d" value="Zoeken"></input>
+                    </form>
+
+                </div>
+            </div>
+        </aside>
+        <section class="content-wrapper js-scroll-wrapper">
+            <div id="id517">
+
+            </div>
+
+
+            <div class="content">
+
+                <div class="l-narrow overzicht no-padding">
+
+                    <div id="id516">
+                        <table class="table s5-table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            </thead>
+
+                            <tbody class="data" id="id525">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+
+            </div>
+
+        </section>
+    </div>
+</div>
+</body>
+</html>

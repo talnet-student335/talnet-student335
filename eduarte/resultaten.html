@@ -8,7 +8,7 @@
     <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.menu.AbstractSubMenu/SubMenuHeaderTabs-ver-1576677976000.js"></script>
     <script type="text/javascript" id="wicket-ajax-base-url">
         /*<![CDATA[*/
-        Wicket.Ajax.baseUrl="resultaten?26";
+        Wicket.Ajax.baseUrl="resultaten.html?26";
         /*]]>*/
     </script>
     <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.panel.resultaten.ResultatenOverzichtPanel/jquery.jcarousel.min-ver-1576677976000.js"></script>
@@ -18,15 +18,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="apple-mobile-web-app-title" content="EduArte Portalen" />
     <link rel="apple-touch-icon" sizes="180x180"
-          href="/assets/img/apple-touch-icon.png">
+          href="/eduarte/assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-          href="/assets/img/favicon-32x32.png">
+          href="/eduarte/assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-          href="/assets/img/favicon-16x16.png">
-    <link rel="manifest" href="/assets/img/site.webmanifest">
-    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg"
+          href="/eduarte/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/eduarte/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/eduarte/assets/img/safari-pinned-tab.svg"
           color="#5bbad5">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="shortcut icon" href="/eduarte/assets/img/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config"
           content="/assets/img/browserconfig.xml">
@@ -44,21 +44,21 @@
             $('#id234').menuToggle();;
             $('#id235').headerTabs();;
             $('#id236').menuToggle();;
-            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-0-cijfers-0-cijfer-container-link","c":"id245","e":"click"});;
-            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-1-cijfers-0-cijfer-container-link","c":"id246","e":"click"});;
-            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-2-cijfers-0-cijfer-container-link","c":"id247","e":"click"});;
-            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-3-cijfers-0-cijfer-container-link","c":"id248","e":"click"});;
-            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-3-cijfers-1-cijfer-container-link","c":"id249","e":"click"});;
-            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-4-cijfers-0-cijfer-container-link","c":"id24a","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten.html?26-2.0-loader-content-vakken-0-cijfers-0-cijfer-container-link","c":"id245","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten.html?26-2.0-loader-content-vakken-1-cijfers-0-cijfer-container-link","c":"id246","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten.html?26-2.0-loader-content-vakken-2-cijfers-0-cijfer-container-link","c":"id247","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten.html?26-2.0-loader-content-vakken-3-cijfers-0-cijfer-container-link","c":"id248","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten.html?26-2.0-loader-content-vakken-3-cijfers-1-cijfer-container-link","c":"id249","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten.html?26-2.0-loader-content-vakken-4-cijfers-0-cijfer-container-link","c":"id24a","e":"click"});;
             $('#id243 .result-overview--grades').resultatenCarousel();;
             $('#id237').dropDownChoice({autoselect: false, ajax: function () {
-                    var attrs = {"u":"./resultaten?26-2.1-type","m":"POST","c":"id237","dep":[function(attrs){return Wicket.Form.serializeElement('id237')}]};
+                    var attrs = {"u":"./resultaten.html?26-2.1-type","m":"POST","c":"id237","dep":[function(attrs){return Wicket.Form.serializeElement('id237')}]};
                     var params = [];
                     attrs.ep = params.concat(attrs.ep || []);
                     Wicket.Ajax.ajax(attrs);
                 }
             });;
-            Wicket.Ajax.ajax({"u":"./resultaten?26-2.1-type","m":"POST","c":"id237","dep":[function(attrs){return Wicket.Form.serializeElement('id237')}],"e":"change"});;
+            Wicket.Ajax.ajax({"u":"./resultaten.html?26-2.1-type","m":"POST","c":"id237","dep":[function(attrs){return Wicket.Form.serializeElement('id237')}],"e":"change"});;
             Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
             ;});
         /*]]>*/
@@ -79,32 +79,27 @@
 
                 <li>
 
-                    <a href="." title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
+                    <a href=".." title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
 
 
                 </li><li>
 
-                <a href="./agenda" title="Agenda"><i class="flaticon calendar-4"></i>Agenda</a>
+                <a href="./agenda.html" title="Agenda"><i class="flaticon calendar-4"></i>Agenda</a>
 
 
             </li><li>
 
-                <a href="./presentie/presentie.overzicht" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
+                <a href="./presentie.overzicht/overzicht.html" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
 
 
             </li><li>
 
-                <a href="./stage" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
+                <a href="stage.html" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
 
 
             </li><li>
 
-                <a href="./studie/opleiding" title="Studie"><i class="flaticon building-1"></i>Studie</a>
-
-
-            </li><li>
-
-
+                <a href="./opleiding/opleiding.html" title="Studie"><i class="flaticon building-1"></i>Studie</a>
 
 
             </li><li>
@@ -114,7 +109,12 @@
 
             </li><li>
 
-                <a href="./werklijst" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
+
+
+
+            </li><li>
+
+                <a href="werklijst.html" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
 
 
             </li><li>
@@ -124,7 +124,7 @@
 
             </li><li class="is-selected">
 
-                <a href="./resultaten" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
+                <a href="./resultaten.html" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
 
 
             </li>
@@ -134,11 +134,11 @@
         <div class="navigation-footer">
             <ul>
                 <li>
-                    <a href="./account" title="Profiel">
+                    <a href="./account.html" title="Profiel">
                         <i class="flaticon user-2"></i>
                     </a>
                 </li><li>
-                <a href="./resultaten?26-2.-menu-footer-2-uitloggen" title="Uitloggen">
+                <a href="./resultaten.html?26-2.-menu-footer-2-uitloggen" title="Uitloggen">
                     <i class="flaticon logout"></i>
                 </a>
             </li>
@@ -165,7 +165,7 @@
                 <ul>
                     <li class="is-selected">
 
-                        <a href="./resultaten" title="Matrix">Matrix</a>
+                        <a href="./resultaten.html" title="Matrix">Matrix</a>
 
                     </li><li>
 
@@ -200,7 +200,7 @@
                     <div class="filter--items">
                         <label>Type resultaten:</label>
                         <div class="select">
-                            <select name="type" id="id237" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){window.location.href=&#039;./resultaten?26-2.0-type&amp;amp;type=&#039; + this.options[this.selectedIndex].value;}" class="">
+                            <select name="type" id="id237" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){window.location.href=&#039;./resultaten.html?26-2.0-type&amp;amp;type=&#039; + this.options[this.selectedIndex].value;}" class="">
                                 <option selected="selected" value="">Alles</option>
                                 <option value="0">Toetsen</option>
                                 <option value="1">Examengericht</option>
