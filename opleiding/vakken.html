@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript" src="../wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-2.2.4-ver-1526491824000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-1526491986000.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+        /*<![CDATA[*/
+        Wicket.Ajax.baseUrl="studie/archief?44";
+        /*]]>*/
+    </script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.wiquery.resources.ResourceRefUtil/jquery.timers-1.1.3-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.beyonddatapanel.ScrollingBeyondDataPanel/beyonddatapanel-ver-1574233130000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.wiquery.resources.ResourceRefUtil/json2-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.behaviors.ServerCallAjaxBehaviour/servercall-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.panel.EduArioFeedbackPanel/eduariofeedbackpanel-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.behaviors.EduArioUIResourceReference/EduArioUI-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.menu.AbstractSubMenu/SubMenuHeaderTabs-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.choice.AbstractAjaxDropDownChoice/dropdownchoice-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.form.BooleanEditPanel/BooleanEditPanel-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.panel.SidebarPanel/slidebar-ver-1576677976000.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="EduArte Portalen" />
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg"
+          color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config"
+          content="/assets/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="EduArte Portalen" />
+    <meta name="author" content="Iddink Group" />
+    <title>Vakkenoverzicht - EduArte Portalen</title>
+    <!-- Page class: class nl.topicus.eduario.web.pages.vakken.VakkenOverzichtPage -->
+    <link rel="stylesheet" type="text/css" href="../wicket/resource/assets.AssetsResourceReferenceMarker/stylesheets/styles-ver-1576677976000.css" />
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.pages.AbstractEduArioPage/jquery.viewport.mini-ver-1576677976000.js"></script>
+    <script type="text/javascript" >
+        /*<![CDATA[*/
+        Wicket.Event.add(window, "domready", function(event) {
+            Wicket.Ajax.ajax({"u":"./archief?44-2.0-datapanel-table-skulls-brainz-6","c":"id3d1","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./archief?44-2.0-datapanel-table-skulls-brainz-7","c":"id3d2","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./archief?44-2.0-datapanel-table-skulls-brainz-8","c":"id3d3","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./archief?44-2.0-datapanel-table-skulls-brainz-9","c":"id3d4","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./archief?44-2.0-datapanel-table-skulls-brainz-10","c":"id3d5","e":"click"});;
+            $('#id3a8').beyondData({cacheBodies: 10, topOffset: function() { return jQuery('.header').height() - 0.5; }, viewportPadding: 200, itemsPerPage: 20, itemCount: 21});;
+            $('#id3a8').bindServerCall({ajax: {"u":"./archief?44-2.0-datapanel","m":"POST","c":"id3a8"}});;
+            $('#id3a9').eduArioFeedback();;
+            $('#id3aa').menuToggle();;
+            $('#id3ab').headerTabs();;
+            $('#id3ac').menuToggle();;
+            $('#id3ad').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./archief?44-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"id3ad","dep":[function(attrs){return Wicket.Form.serializeElement('id3ad')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./archief?44-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"id3ad","dep":[function(attrs){return Wicket.Form.serializeElement('id3ad')}],"e":"change"});;
+            $('#id3ae').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./archief?44-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"id3ae","dep":[function(attrs){return Wicket.Form.serializeElement('id3ae')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./archief?44-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"id3ae","dep":[function(attrs){return Wicket.Form.serializeElement('id3ae')}],"e":"change"});;
+            $('#id3af').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./archief?44-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-2-controlGroup-controlGroup_body-formField","m":"POST","c":"id3af","dep":[function(attrs){return Wicket.Form.serializeElement('id3af')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./archief?44-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-2-controlGroup-controlGroup_body-formField","m":"POST","c":"id3af","dep":[function(attrs){return Wicket.Form.serializeElement('id3af')}],"e":"change"});;
+            Wicket.Ajax.ajax({"u":"./archief?44-2.0-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-3-controlGroup-controlGroup_body-formField-booleanHiddenField","m":"POST","c":"id3b0","e":"change"});;
+            $('#id3b1').booleanEditPanel();;
+            Wicket.Ajax.ajax({"u":"./archief?44-2.0-sidebar-sidebarContent-0-content-form-zoeken","m":"POST","c":"id3b3","f":"id3b2","sc":"zoeken","e":"click"});;
+            Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+            ;});
+        /*]]>*/
+    </script>
+</head>
+<body>
+<div class="l-container">
+    <nav class="navigation navigation--student">
+        <div class="navigation-header">
+            <div class="navigation-header--logo">
+                <a><img src="../wicket/resource/assets.AssetsResourceReferenceMarker/img/logo-eduarte-ver-1576677958000.svg" alt="EduArtelogo"/></a>
+            </div>
+            <div class="omgevingIndicator productieomgeving"></div>
+            <i class="navigation-header--close-navigation js-navigation flaticon x-1" id="id3aa"></i>
+        </div>
+        <div class="navigation-items">
+            <ul class="navigation-items--main">
+
+                <li>
+
+                    <a href="../" title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
+
+
+                </li><li>
+
+                <a href="../agenda" title="Agenda"><i class="flaticon calendar-4"></i>Agenda</a>
+
+
+            </li><li>
+
+                <a href="../presentie/presentie.overzicht" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
+
+
+            </li><li>
+
+                <a href="../stage" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
+
+
+            </li><li class="is-selected">
+
+                <a href="./opleiding" title="Studie"><i class="flaticon building-1"></i>Studie</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="../werklijst" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="../resultaten" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
+
+
+            </li>
+
+            </ul>
+        </div>
+        <div class="navigation-footer">
+            <ul>
+                <li>
+                    <a href="../account" title="Profiel">
+                        <i class="flaticon user-2"></i>
+                    </a>
+                </li><li>
+                <a href="./archief?44-2.-menu-footer-2-uitloggen" title="Uitloggen">
+                    <i class="flaticon logout"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="l-flex-content">
+
+        <header class="header">
+            <div class="header-toolbar">
+                <i class="header-toolbar--open-navigation js-navigation flaticon menu-2" id="id3ac"></i>
+                <h1>
+
+                    <a href="./opleiding">
+                        <span class="is-fixed is-lastcrumb">Studie</span>
+                    </a>
+
+                    <i class="flaticon right-2"></i>
+
+
+
+                    <span class="is-fixed is-lastcrumb">Vakken</span>
+
+
+
+                </h1>
+
+            </div>
+            <div class="header-tabs" id="id3ab">
+                <ul>
+                    <li>
+
+                        <a href="./dossier" title="Dossier">Dossier</a>
+
+                    </li><li>
+
+                    <a href="./opleiding" title="Opleiding">Opleiding</a>
+
+                </li><li>
+
+                    <a href="./groepen" title="Groepen">Groepen</a>
+
+                </li><li>
+
+
+
+                </li><li>
+
+                    <a href="./keuzevakken" title="Keuzevakken">Keuzevakken</a>
+
+                </li><li>
+
+                    <a href="../toetsmomenten" title="Toetsmomenten">Toetsmomenten</a>
+
+                </li><li>
+
+                    <a href="../inloopcolleges" title="Inloopcolleges">Inloopcolleges</a>
+
+                </li><li class="is-selected">
+
+                    <a href="./archief" title="Vakken">Vakken</a>
+
+                </li><li>
+
+                    <a href="./documenten" title="Documenten">Documenten</a>
+
+                </li>
+                </ul>
+                <span class="header-tabs--toggle">
+		<i class="flaticon menu-2"></i>
+	</span>
+            </div>
+        </header>
+
+        <div class="popover defaultPopoverWidth" id="id3b4">
+        </div>
+        <aside class="s5-aside-slidebar">
+            <div id="id3b5">
+                <div class="s5-filterbar-toggle js-filterbar-toggle">
+                    <a href="#id3a2"><i class="icon-filter-1"></i></a>
+                </div>
+                <div class="s5-filterbar-container" id="id3a2">
+
+                    <h2>Filter</h2>
+                    <form id="id3b2" method="post" action="./archief?44-2.-sidebar-sidebarContent-0-content-form"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"/><input type="submit" tabindex="-1" name="zoeken" onclick=" var b=document.getElementById('id3b3'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = Wicket.bind(b.onclick, b)(); if (r != false) b.click(); } else { b.click(); };  return false;"  /></div>
+
+
+                        <fieldset>
+
+                            <div id="id3b6">
+
+
+                                <h5>Verbintenis</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:0:controlGroup:controlGroup_body:formField" id="id3ad" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#id3b3&#039;).click();}">
+                                        <option value="">Alles</option>
+                                        <option selected="selected" value="0">Applicatieontwikkelaar (Definitief)</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div id="id3b7">
+
+
+                                <h5>Fase</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:1:controlGroup:controlGroup_body:formField" id="id3ae" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#id3b3&#039;).click();}">
+                                        <option selected="selected" value="">Maak je keuze...</option>
+                                        <option value="0">Fase 0</option>
+                                        <option value="1">Leerjaar 3</option>
+                                        <option value="2">Leerjaar 2</option>
+                                        <option value="3">Leerjaar 1</option>
+                                        <option value="4">Opleiding van 3 jaar</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div id="id3b8">
+
+
+                                <h5>Type</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:2:controlGroup:controlGroup_body:formField" id="id3af" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#id3b3&#039;).click();}">
+                                        <option selected="selected" value="">Alles</option>
+                                        <option value="0">Examengericht</option>
+                                        <option value="1">Toetsen</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div id="id3b9" class=" form--is-required ">
+
+
+                                <h5>Actief</h5>
+
+
+
+
+
+                                <ul id="id3b1">
+                                    <li class="popover-tabs">
+                                        <input type="hidden" value="true" name="fieldset:fieldSetMarkup:inputFields:3:controlGroup:controlGroup_body:formField:booleanHiddenField" id="id3b0" class=""></input>
+                                        <ul>
+                                            <li><a data-booleanvalue="false"><span>Alles</span></a></li>
+                                            <li class="is-selected is-selected"><a data-booleanvalue="true"><span>Actief</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+
+
+
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <input type="button" class="is-hidden" id="id3b3" value="Zoeken"></input>
+                    </form>
+
+                </div>
+            </div>
+        </aside>
+        <section class="content-wrapper js-scroll-wrapper">
+            <div id="id3a9">
+
+            </div>
+
+
+            <div class="content has-sidebar">
+
+                <div class="l-full overzicht" id="id3a8">
+                    <table class="table s5-table">
+                        <thead>
+                        <tr>
+                            <th id="id3d1" class="table--sortable is-sorted">
+                                Vak
+                                <i class="flaticon up-1"></i>
+                            </th><th id="id3d2" class="table--sortable">
+                            Code
+                            <i class="flaticon"></i>
+                        </th><th id="id3d3" class="table--sortable">
+                            Afkorting
+                            <i class="flaticon"></i>
+                        </th><th id="id3d4" class="s5-hide-medium table--sortable">
+                            Begindatum
+                            <i class="flaticon"></i>
+                        </th><th id="id3d5" class="s5-hide-medium table--sortable">
+                            Einddatum
+                            <i class="flaticon"></i>
+                        </th>
+                        </tr>
+                        </thead>
+
+                        <tbody class="data" id="id3ba">
+                        <tr id="id3bc">
+                            <td>Beroepsgerichte ontwikkeling</td><td>MMV-2BER-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3bd">
+                            <td>Beroepsgerichte ontwikkeling</td><td>MMV-1BER-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3be">
+                            <td>Beroepspraktijkvorming</td><td>25187BPV</td><td></td><td class="s5-hide-medium">01-03-2019</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3bf">
+                            <td>BPV </td><td>MMV-BPV-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c0">
+                            <td>BPV lj2</td><td>MMV-2BPV-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c1">
+                            <td>Engels A2 </td><td>MMV-ENGA2-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c2">
+                            <td>Engels B1 </td><td>MMV-ENGB1-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c3">
+                            <td>Engels generiek A2 IE - B1 CE</td><td>KE-ENGGEN A2B1</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c4">
+                            <td>Gezondheid, bewegen en sport</td><td>MMV-GBS</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c5">
+                            <td>Levert een bijdrage aan het ontwikkeltraject</td><td>25187B1-K1</td><td></td><td class="s5-hide-medium">01-03-2019</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c6">
+                            <td>Levert een product op</td><td>25187B1-K3</td><td></td><td class="s5-hide-medium">01-03-2019</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c7">
+                            <td>Loopbaan en burgerschap</td><td>MMV-LB-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c8">
+                            <td>Loopbaan en Burgerschap</td><td>25187LB</td><td></td><td class="s5-hide-medium">01-03-2019</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3c9">
+                            <td>Nederlands 2F </td><td>MMV-NED2F-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3ca">
+                            <td>Nederlands 3F </td><td>MMV-NED3F-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3cb">
+                            <td>Nederlands 3F n4</td><td>KE-NED-n4 3F</td><td></td><td class="s5-hide-medium">01-03-2019</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3cc">
+                            <td>Onderhoudt en beheert de applicatie</td><td>25187P1-K1</td><td></td><td class="s5-hide-medium">01-03-2019</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3cd">
+                            <td>Realiseert en test (onderdelen van) een product</td><td>25187B1-K2</td><td></td><td class="s5-hide-medium">01-03-2019</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3ce">
+                            <td>Rekenen 2F </td><td>MMV-REK2F-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr><tr id="id3cf">
+                            <td>Rekenen 3F </td><td>MMV-REK3F-25187OR</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                        </tr>
+                        </tbody><tbody class="data" id="id3bb">
+                    <tr id="id3d0">
+                        <td>Rekenen 3F n4</td><td>KE-REK-n4 3F</td><td></td><td class="s5-hide-medium">01-08-2018</td><td class="s5-hide-medium"></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="content">
+
+            </div>
+
+        </section>
+    </div>
+</div>
+</body>
+</html>

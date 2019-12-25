@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript" src="./wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-2.2.4-ver-1526491824000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.panel.EduArioFeedbackPanel/eduariofeedbackpanel-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-1526491986000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.behaviors.EduArioUIResourceReference/EduArioUI-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.menu.AbstractSubMenu/SubMenuHeaderTabs-ver-1576677976000.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+        /*<![CDATA[*/
+        Wicket.Ajax.baseUrl="resultaten?26";
+        /*]]>*/
+    </script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.panel.resultaten.ResultatenOverzichtPanel/jquery.jcarousel.min-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.panel.resultaten.ResultatenOverzichtPanel/ResultatenOverzichtPanel-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.cobra.web.components.choice.AbstractAjaxDropDownChoice/dropdownchoice-ver-1574233124000.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="EduArte Portalen" />
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg"
+          color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config"
+          content="/assets/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="EduArte Portalen" />
+    <meta name="author" content="Iddink Group" />
+    <title>Resultaten - EduArte Portalen</title>
+    <!-- Page class: class nl.topicus.eduario.web.pages.resultaten.ResultatenOverzichtPage -->
+    <link rel="stylesheet" type="text/css" href="./wicket/resource/assets.AssetsResourceReferenceMarker/stylesheets/styles-ver-1576677976000.css" />
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.pages.AbstractEduArioPage/jquery.viewport.mini-ver-1576677976000.js"></script>
+    <script type="text/javascript" >
+        /*<![CDATA[*/
+        Wicket.Event.add(window, "domready", function(event) {
+            $('#id233').eduArioFeedback();;
+            $('#id234').menuToggle();;
+            $('#id235').headerTabs();;
+            $('#id236').menuToggle();;
+            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-0-cijfers-0-cijfer-container-link","c":"id245","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-1-cijfers-0-cijfer-container-link","c":"id246","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-2-cijfers-0-cijfer-container-link","c":"id247","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-3-cijfers-0-cijfer-container-link","c":"id248","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-3-cijfers-1-cijfer-container-link","c":"id249","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./resultaten?26-2.0-loader-content-vakken-4-cijfers-0-cijfer-container-link","c":"id24a","e":"click"});;
+            $('#id243 .result-overview--grades').resultatenCarousel();;
+            $('#id237').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./resultaten?26-2.1-type","m":"POST","c":"id237","dep":[function(attrs){return Wicket.Form.serializeElement('id237')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./resultaten?26-2.1-type","m":"POST","c":"id237","dep":[function(attrs){return Wicket.Form.serializeElement('id237')}],"e":"change"});;
+            Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+            ;});
+        /*]]>*/
+    </script>
+</head>
+<body>
+<div class="l-container">
+    <nav class="navigation navigation--student">
+        <div class="navigation-header">
+            <div class="navigation-header--logo">
+                <a><img src="./wicket/resource/assets.AssetsResourceReferenceMarker/img/logo-eduarte-ver-1576677958000.svg" alt="EduArtelogo"/></a>
+            </div>
+            <div class="omgevingIndicator productieomgeving"></div>
+            <i class="navigation-header--close-navigation js-navigation flaticon x-1" id="id234"></i>
+        </div>
+        <div class="navigation-items">
+            <ul class="navigation-items--main">
+
+                <li>
+
+                    <a href="." title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
+
+
+                </li><li>
+
+                <a href="./agenda" title="Agenda"><i class="flaticon calendar-4"></i>Agenda</a>
+
+
+            </li><li>
+
+                <a href="./presentie/presentie.overzicht" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
+
+
+            </li><li>
+
+                <a href="./stage" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
+
+
+            </li><li>
+
+                <a href="./studie/opleiding" title="Studie"><i class="flaticon building-1"></i>Studie</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="./werklijst" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li class="is-selected">
+
+                <a href="./resultaten" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
+
+
+            </li>
+
+            </ul>
+        </div>
+        <div class="navigation-footer">
+            <ul>
+                <li>
+                    <a href="./account" title="Profiel">
+                        <i class="flaticon user-2"></i>
+                    </a>
+                </li><li>
+                <a href="./resultaten?26-2.-menu-footer-2-uitloggen" title="Uitloggen">
+                    <i class="flaticon logout"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="l-flex-content">
+
+        <header class="header">
+            <div class="header-toolbar">
+                <i class="header-toolbar--open-navigation js-navigation flaticon menu-2" id="id236"></i>
+                <h1>
+
+
+
+                    <span class="is-fixed is-lastcrumb is-single">Resultaten</span>
+
+
+
+                </h1>
+
+            </div>
+            <div class="header-tabs" id="id235">
+                <ul>
+                    <li class="is-selected">
+
+                        <a href="./resultaten" title="Matrix">Matrix</a>
+
+                    </li><li>
+
+                    <a href="./alleresultaten" title="Overzicht">Overzicht</a>
+
+                </li><li>
+
+                    <a href="./studievoortgang" title="Studievoortgang">Studievoortgang</a>
+
+                </li>
+                </ul>
+                <span class="header-tabs--toggle">
+		<i class="flaticon menu-2"></i>
+	</span>
+            </div>
+        </header>
+
+        <div class="popover defaultPopoverWidth" id="id239">
+        </div>
+        <aside class="s5-aside-slidebar">
+            <div id="id23a" style="display:none"></div>
+        </aside>
+        <section class="content-wrapper js-scroll-wrapper">
+            <div id="id233">
+
+            </div>
+
+
+            <div class="content has-no-padding">
+
+                <div class="filter signal--filter">
+                    <div class="filter--items">
+                        <label>Type resultaten:</label>
+                        <div class="select">
+                            <select name="type" id="id237" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){window.location.href=&#039;./resultaten?26-2.0-type&amp;amp;type=&#039; + this.options[this.selectedIndex].value;}" class="">
+                                <option selected="selected" value="">Alles</option>
+                                <option value="0">Toetsen</option>
+                                <option value="1">Examengericht</option>
+                            </select>
+                            <i class="flaticon down-2"></i>
+                        </div>
+                        <span>
+</span>
+                        <div id="id23b" style="display:none"></div>
+                    </div>
+                    <div class="filter--toggle">
+                        <a><i class="flaticon slider-3"></i> Filter</a>
+                    </div>
+                </div>
+                <div id="id23c"><div id="id243">
+                    <table class="result-overview--table" id="id244">
+                        <tbody>
+                        <tr>
+                            <td class="result-overview--course">Engels A2 </td>
+                            <td class="result--overview-structure"></td>
+                            <td class="result-overview--grades">
+                                <div class="result-overview--grades-container">
+                                    <a href='#' class='result-overview--carousel-prev flaticon left-1'></a>
+                                    <div class="result-overview--carousel">
+                                        <ul>
+                                            <li>
+
+                                                <div class="result-overview--grade is-negative">
+                                                    <div>
+                                                        <a id="id245" href="javascript:;">
+                                                            <span class="grade-structure--grade">1,0</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href='#' class='result-overview--carousel-next flaticon right-1'></a>
+                                </div>
+                            </td>
+                            <td>
+
+
+                            </td>
+                        </tr><tr>
+                            <td class="result-overview--course">Engels B1 </td>
+                            <td class="result--overview-structure"></td>
+                            <td class="result-overview--grades">
+                                <div class="result-overview--grades-container">
+                                    <a href='#' class='result-overview--carousel-prev flaticon left-1'></a>
+                                    <div class="result-overview--carousel">
+                                        <ul>
+                                            <li>
+
+                                                <div class="result-overview--grade is-negative">
+                                                    <div>
+                                                        <a id="id246" href="javascript:;">
+                                                            <span class="grade-structure--grade">1,0</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href='#' class='result-overview--carousel-next flaticon right-1'></a>
+                                </div>
+                            </td>
+                            <td>
+
+
+                            </td>
+                        </tr><tr>
+                            <td class="result-overview--course">Gezondheid, bewegen en sport</td>
+                            <td class="result--overview-structure"></td>
+                            <td class="result-overview--grades">
+                                <div class="result-overview--grades-container">
+                                    <a href='#' class='result-overview--carousel-prev flaticon left-1'></a>
+                                    <div class="result-overview--carousel">
+                                        <ul>
+                                            <li>
+
+                                                <div class="result-overview--grade is-positive">
+                                                    <div>
+                                                        <a id="id247" href="javascript:;">
+                                                            <span class="grade-structure--grade">G</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href='#' class='result-overview--carousel-next flaticon right-1'></a>
+                                </div>
+                            </td>
+                            <td>
+
+
+                            </td>
+                        </tr><tr>
+                            <td class="result-overview--course">Nederlands 3F </td>
+                            <td class="result--overview-structure"></td>
+                            <td class="result-overview--grades">
+                                <div class="result-overview--grades-container">
+                                    <a href='#' class='result-overview--carousel-prev flaticon left-1'></a>
+                                    <div class="result-overview--carousel">
+                                        <ul>
+                                            <li>
+
+                                                <div class="result-overview--grade is-negative">
+                                                    <div>
+                                                        <a id="id248" href="javascript:;">
+                                                            <span class="grade-structure--grade">1,0</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </li><li>
+
+                                            <div class="result-overview--grade is-negative">
+                                                <div>
+                                                    <a id="id249" href="javascript:;">
+                                                        <span class="grade-structure--grade">3,0</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    <a href='#' class='result-overview--carousel-next flaticon right-1'></a>
+                                </div>
+                            </td>
+                            <td>
+
+
+                            </td>
+                        </tr><tr>
+                            <td class="result-overview--course">Rekenen 3F </td>
+                            <td class="result--overview-structure"></td>
+                            <td class="result-overview--grades">
+                                <div class="result-overview--grades-container">
+                                    <a href='#' class='result-overview--carousel-prev flaticon left-1'></a>
+                                    <div class="result-overview--carousel">
+                                        <ul>
+                                            <li>
+
+                                                <div class="result-overview--grade is-negative">
+                                                    <div>
+                                                        <a id="id24a" href="javascript:;">
+                                                            <span class="grade-structure--grade">1,0</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href='#' class='result-overview--carousel-next flaticon right-1'></a>
+                                </div>
+                            </td>
+                            <td>
+
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div></div>
+
+            </div>
+            <div class="content">
+
+            </div>
+
+        </section>
+    </div>
+</div>
+</body>
+</html>

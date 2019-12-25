@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript" src="../wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-2.2.4-ver-1526491824000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.panel.EduArioFeedbackPanel/eduariofeedbackpanel-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-1526491986000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.behaviors.EduArioUIResourceReference/EduArioUI-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.menu.AbstractSubMenu/SubMenuHeaderTabs-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/org.wicketstuff.wiquery.ui.JQueryUIJavaScriptResourceReference/jquery-ui-ver-1533200756000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/org.wicketstuff.wiquery.ui.datepicker.DatePickerLanguageResourceReference/i18n/datepicker-nl-ver-1533200756000.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+        /*<![CDATA[*/
+        Wicket.Ajax.baseUrl="presentie/presentie.overzicht?32";
+        /*]]>*/
+    </script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.choice.AbstractAjaxDropDownChoice/dropdownchoice-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.panel.SidebarPanel/slidebar-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.ajax.LazyLoaderResourceReference/jquery.lazyloader-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.wiquery.resources.ResourceRefUtil/json2-ver-1574233124000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.behaviors.ServerCallAjaxBehaviour/servercall-ver-1574233124000.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="EduArte Portalen" />
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg"
+          color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config"
+          content="/assets/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="EduArte Portalen" />
+    <meta name="author" content="Iddink Group" />
+    <title>Absentie - EduArte Portalen</title>
+    <!-- Page class: class nl.topicus.eduario.web.pages.presentie.AbsentiePage -->
+    <link rel="stylesheet" type="text/css" href="../wicket/resource/assets.AssetsResourceReferenceMarker/stylesheets/styles-ver-1576677976000.css" />
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.pages.AbstractEduArioPage/jquery.viewport.mini-ver-1576677976000.js"></script>
+    <script type="text/javascript" >
+        /*<![CDATA[*/
+        Wicket.Event.add(window, "domready", function(event) {
+            $('#id2c4').eduArioFeedback();;
+            $('#id2c5').menuToggle();;
+            $('#id2c6').headerTabs();;
+            $('#id2c7').menuToggle();;
+            $('#id2c8').datepicker({dateFormat: 'dd-mm-yy'});;
+            Wicket.Ajax.ajax({"u":"./presentie.overzicht?32-2.0-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"id2c8","e":"change"});;
+            $('#id2c9').datepicker({dateFormat: 'dd-mm-yy'});;
+            Wicket.Ajax.ajax({"u":"./presentie.overzicht?32-2.0-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"id2c9","e":"change"});;
+            $('#id2ca').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./presentie.overzicht?32-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-2-controlGroup-controlGroup_body-formField","m":"POST","c":"id2ca","dep":[function(attrs){return Wicket.Form.serializeElement('id2ca')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./presentie.overzicht?32-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-2-controlGroup-controlGroup_body-formField","m":"POST","c":"id2ca","dep":[function(attrs){return Wicket.Form.serializeElement('id2ca')}],"e":"change"});;
+            $('#id2cb').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./presentie.overzicht?32-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-3-controlGroup-controlGroup_body-formField","m":"POST","c":"id2cb","dep":[function(attrs){return Wicket.Form.serializeElement('id2cb')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./presentie.overzicht?32-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-3-controlGroup-controlGroup_body-formField","m":"POST","c":"id2cb","dep":[function(attrs){return Wicket.Form.serializeElement('id2cb')}],"e":"change"});;
+            Wicket.Ajax.ajax({"u":"./presentie.overzicht?32-2.0-sidebar-sidebarContent-0-content-form-zoeken","m":"POST","c":"id2cd","f":"id2cc","sc":"zoeken","e":"click"});;
+            $('#id2ce').lazyloader();;
+            $('#id2ce').bindServerCall({ajax: {"u":"./presentie.overzicht?32-2.0-lazyLoader","m":"POST","c":"id2ce"}});;
+            Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+            ;});
+        /*]]>*/
+    </script>
+</head>
+<body>
+<div class="l-container">
+    <nav class="navigation navigation--student">
+        <div class="navigation-header">
+            <div class="navigation-header--logo">
+                <a><img src="../wicket/resource/assets.AssetsResourceReferenceMarker/img/logo-eduarte-ver-1576677958000.svg" alt="EduArtelogo"/></a>
+            </div>
+            <div class="omgevingIndicator productieomgeving"></div>
+            <i class="navigation-header--close-navigation js-navigation flaticon x-1" id="id2c5"></i>
+        </div>
+        <div class="navigation-items">
+            <ul class="navigation-items--main">
+
+                <li>
+
+                    <a href="../" title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
+
+
+                </li><li>
+
+                <a href="../agenda" title="Agenda"><i class="flaticon calendar-4"></i>Agenda</a>
+
+
+            </li><li class="is-selected">
+
+                <a href="./presentie.overzicht" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
+
+
+            </li><li>
+
+                <a href="../stage" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
+
+
+            </li><li>
+
+                <a href="../studie/opleiding" title="Studie"><i class="flaticon building-1"></i>Studie</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="../werklijst" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="../resultaten" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
+
+
+            </li>
+
+            </ul>
+        </div>
+        <div class="navigation-footer">
+            <ul>
+                <li>
+                    <a href="../account" title="Profiel">
+                        <i class="flaticon user-2"></i>
+                    </a>
+                </li><li>
+                <a href="./presentie.overzicht?32-2.-menu-footer-2-uitloggen" title="Uitloggen">
+                    <i class="flaticon logout"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="l-flex-content">
+
+        <header class="header">
+            <div class="header-toolbar">
+                <i class="header-toolbar--open-navigation js-navigation flaticon menu-2" id="id2c7"></i>
+                <h1>
+
+                    <a href="./presentie.overzicht">
+                        <span class="is-fixed is-lastcrumb">Presentie</span>
+                    </a>
+
+                    <i class="flaticon right-2"></i>
+
+
+
+                    <span class="is-fixed is-lastcrumb">Overzicht</span>
+
+
+
+                </h1>
+
+            </div>
+            <div class="header-tabs" id="id2c6">
+                <ul>
+                    <li class="is-selected">
+
+                        <a href="./presentie.overzicht" title="Overzicht">Overzicht</a>
+
+                    </li><li>
+
+                    <a href="./absentie" title="Absentie">Absentie</a>
+
+                </li><li>
+
+                    <a href="./presentie" title="Presentie">Presentie</a>
+
+                </li><li>
+
+
+
+                </li>
+                </ul>
+                <span class="header-tabs--toggle">
+		<i class="flaticon menu-2"></i>
+	</span>
+            </div>
+        </header>
+
+        <div class="popover defaultPopoverWidth" id="id2d1">
+        </div>
+        <aside class="s5-aside-slidebar">
+            <div id="id2d2">
+                <div class="s5-filterbar-toggle js-filterbar-toggle">
+                    <a href="#id2c3"><i class="icon-filter-1"></i></a>
+                </div>
+                <div class="s5-filterbar-container" id="id2c3">
+
+                    <h2>Filter</h2>
+                    <form id="id2cc" method="post" action="./presentie.overzicht?32-2.-sidebar-sidebarContent-0-content-form"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"/><input type="submit" tabindex="-1" name="zoeken" onclick=" var b=document.getElementById('id2cd'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = Wicket.bind(b.onclick, b)(); if (r != false) b.click(); } else { b.click(); };  return false;"  /></div>
+
+
+                        <fieldset>
+
+                            <div id="id2d3" class=" sidebar-date">
+
+
+                                <h5>Vanaf</h5>
+
+
+
+
+
+                                <input type="text" class="s5-input-text" value="23-12-2019" name="fieldset:fieldSetMarkup:inputFields:0:controlGroup:controlGroup_body:formField" id="id2c8" placeholder=""/>
+                                <i class="flaticon calendar-3"></i>
+
+
+
+
+
+                            </div>
+
+                            <div id="id2d4" class=" sidebar-date">
+
+
+                                <h5>Tot</h5>
+
+
+
+
+
+                                <input type="text" class="s5-input-text" value="29-12-2019" name="fieldset:fieldSetMarkup:inputFields:1:controlGroup:controlGroup_body:formField" id="id2c9" placeholder=""/>
+                                <i class="flaticon calendar-3"></i>
+
+
+
+
+
+                            </div>
+
+                            <div id="id2d5">
+
+
+                                <h5>Waarneming soort</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:2:controlGroup:controlGroup_body:formField" id="id2ca" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#id2cd&#039;).click();}">
+                                        <option selected="selected" value="">Maak je keuze...</option>
+                                        <option value="0">Aanwezig</option>
+                                        <option value="1">Afwezig</option>
+                                        <option value="2">n.v.t.</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div id="id2d6">
+
+
+                                <h5>Geoorloofd afwezig</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:3:controlGroup:controlGroup_body:formField" id="id2cb" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#id2cd&#039;).click();}">
+                                        <option value="">Maak je keuze...</option>
+                                        <option value="0">Ja</option>
+                                        <option value="1">Nee</option>
+                                        <option selected="selected" value="2">Beide</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <input type="button" class="is-hidden" id="id2cd" value="Zoeken"></input>
+                    </form>
+
+                </div>
+            </div>
+        </aside>
+        <section class="content-wrapper js-scroll-wrapper">
+            <div id="id2c4">
+
+            </div>
+
+
+            <div class="content" id="id2d7">
+
+                <div class="content narrow">
+                    <h2 style="text-align: center;">Vanaf 23-12-2019 tot 29-12-2019</h2>
+                    <div class="presence-total-view">
+                        <div class="presence-total">
+                            <h2>Aanwezig</h2>
+                            Aantal lesuren<br />
+                            <p class="show-hours"><label>0</label>&nbsp;uur</p><br />
+                            Aantal uren<br />
+                            <p class="show-hours"><label>0</label>&nbsp;uur</p>
+                        </div>
+                        <div class="presence-total">
+                            <h2>Geoorloofd afwezig</h2>
+                            Aantal lesuren<br />
+                            <p class="show-hours"><label>0</label>&nbsp;uur</p><br />
+                            Aantal uren<br />
+                            <p class="show-hours"><label>0</label>&nbsp;uur</p>
+                        </div>
+                        <div class="presence-total">
+                            <h2>Ongeoorloofd afwezig</h2>
+                            Aantal lesuren<br />
+                            <p class="show-hours red"><label>0</label>&nbsp;uur&nbsp;<i class="flaticon warning-1"></i></p><br />
+                            Aantal uren<br />
+                            <p class="show-hours red"><label>0</label>&nbsp;uur&nbsp;<i class="flaticon warning-1"></i></p>
+                        </div>
+                        <div class="presence-total last">
+                            <h2>Niet geregistreerd</h2>
+                            Aantal lesuren<br />
+                            <p class="show-hours"><label>0</label>&nbsp;uur</p><br />
+                            Aantal uren<br />
+                            <p class="show-hours"><label>0</label>&nbsp;uur</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="id2ce">
+
+                </div>
+
+            </div>
+            <div class="content">
+
+            </div>
+
+        </section>
+    </div>
+</div>
+</body>
+</html>

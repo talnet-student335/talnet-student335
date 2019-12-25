@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript" src="../wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-2.2.4-ver-1526491824000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.panel.EduArioFeedbackPanel/eduariofeedbackpanel-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-1526491986000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.behaviors.EduArioUIResourceReference/EduArioUI-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.menu.AbstractSubMenu/SubMenuHeaderTabs-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.choice.AbstractAjaxDropDownChoice/dropdownchoice-ver-1574233124000.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+        /*<![CDATA[*/
+        Wicket.Ajax.baseUrl="presentie/presentie?34";
+        /*]]>*/
+    </script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.panel.SidebarPanel/slidebar-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.chartjs.ChartJsResourceReference/chartjs-2.2.1-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.components.chartjs.ChartJsPanel$ChartJsPanelResourceReference/ChartJsPanel-ver-1576677976000.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="EduArte Portalen" />
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg"
+          color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config"
+          content="/assets/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="EduArte Portalen" />
+    <meta name="author" content="Iddink Group" />
+    <title>Presentie - EduArte Portalen</title>
+    <!-- Page class: class nl.topicus.eduario.web.pages.presentie.StudentPresentieTotaalOverzichtPage -->
+    <link rel="stylesheet" type="text/css" href="../wicket/resource/assets.AssetsResourceReferenceMarker/stylesheets/styles-ver-1576677976000.css" />
+    <script type="text/javascript" src="../wicket/resource/nl.topicus.eduario.web.pages.AbstractEduArioPage/jquery.viewport.mini-ver-1576677976000.js"></script>
+    <script type="text/javascript" >
+        /*<![CDATA[*/
+        Wicket.Event.add(window, "domready", function(event) {
+            $('#id2f1').eduArioFeedback();;
+            $('#id2f2').menuToggle();;
+            $('#id2f3').headerTabs();;
+            $('#id2f4').menuToggle();;
+            $('#id2f5').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./presentie?34-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"id2f5","dep":[function(attrs){return Wicket.Form.serializeElement('id2f5')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./presentie?34-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"id2f5","dep":[function(attrs){return Wicket.Form.serializeElement('id2f5')}],"e":"change"});;
+            $('#id2f6').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./presentie?34-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"id2f6","dep":[function(attrs){return Wicket.Form.serializeElement('id2f6')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./presentie?34-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"id2f6","dep":[function(attrs){return Wicket.Form.serializeElement('id2f6')}],"e":"change"});;
+            $('#id2f7').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./presentie?34-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-2-controlGroup-controlGroup_body-formField","m":"POST","c":"id2f7","dep":[function(attrs){return Wicket.Form.serializeElement('id2f7')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./presentie?34-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-2-controlGroup-controlGroup_body-formField","m":"POST","c":"id2f7","dep":[function(attrs){return Wicket.Form.serializeElement('id2f7')}],"e":"change"});;
+            EduarteChartJs.drawChartJsDonutChart('id2f8', { labels: ["Afwezig", "Aanwezig"],  datasets: [ { data: [16.5, 342.8], backgroundColor: ["#769FCD", "#5CCAB0"] }] }, null, '342.8', 'uur present', 'Geen waarnemingen');;
+            EduarteChartJs.drawChartJsDonutChart('id2f9', { labels: ["Afwezig", "Aanwezig"],  datasets: [ { data: [5, 95], backgroundColor: ["#769FCD", "#5CCAB0"] }] }, null, '95%', 'present', 'Geen waarnemingen');;
+            EduarteChartJs.drawChartJsDonutChart('id2fa', { labels: ["Nog gepland", "Geregistreerd", "Goedgekeurd"],  datasets: [ { data: [0, 0, 0], backgroundColor: ["#769FCD", "#D2DFED", "#5CCAB0"] }] }, null, '0.0', 'uur goedgekeurd', 'Geen stage-uren bekend');;
+            Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+            ;});
+        /*]]>*/
+    </script>
+</head>
+<body>
+<div class="l-container">
+    <nav class="navigation navigation--student">
+        <div class="navigation-header">
+            <div class="navigation-header--logo">
+                <a><img src="../wicket/resource/assets.AssetsResourceReferenceMarker/img/logo-eduarte-ver-1576677958000.svg" alt="EduArtelogo"/></a>
+            </div>
+            <div class="omgevingIndicator productieomgeving"></div>
+            <i class="navigation-header--close-navigation js-navigation flaticon x-1" id="id2f2"></i>
+        </div>
+        <div class="navigation-items">
+            <ul class="navigation-items--main">
+
+                <li>
+
+                    <a href="../" title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
+
+
+                </li><li>
+
+                <a href="../agenda" title="Agenda"><i class="flaticon calendar-4"></i>Agenda</a>
+
+
+            </li><li class="is-selected">
+
+                <a href="./presentie.overzicht" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
+
+
+            </li><li>
+
+                <a href="../stage" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
+
+
+            </li><li>
+
+                <a href="../studie/opleiding" title="Studie"><i class="flaticon building-1"></i>Studie</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="../werklijst" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="../resultaten" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
+
+
+            </li>
+
+            </ul>
+        </div>
+        <div class="navigation-footer">
+            <ul>
+                <li>
+                    <a href="../account" title="Profiel">
+                        <i class="flaticon user-2"></i>
+                    </a>
+                </li><li>
+                <a href="./presentie?34-2.-menu-footer-2-uitloggen" title="Uitloggen">
+                    <i class="flaticon logout"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="l-flex-content">
+
+        <header class="header">
+            <div class="header-toolbar">
+                <i class="header-toolbar--open-navigation js-navigation flaticon menu-2" id="id2f4"></i>
+                <h1>
+
+                    <a href="./presentie.overzicht">
+                        <span class="is-fixed is-lastcrumb">Presentie</span>
+                    </a>
+
+                    <i class="flaticon right-2"></i>
+
+
+
+                    <span class="is-fixed is-lastcrumb">Presentie</span>
+
+
+
+                </h1>
+
+            </div>
+            <div class="header-tabs" id="id2f3">
+                <ul>
+                    <li>
+
+                        <a href="./presentie.overzicht" title="Overzicht">Overzicht</a>
+
+                    </li><li>
+
+                    <a href="./absentie" title="Absentie">Absentie</a>
+
+                </li><li class="is-selected">
+
+                    <a href="./presentie" title="Presentie">Presentie</a>
+
+                </li><li>
+
+
+
+                </li>
+                </ul>
+                <span class="header-tabs--toggle">
+		<i class="flaticon menu-2"></i>
+	</span>
+            </div>
+        </header>
+
+        <div class="popover defaultPopoverWidth" id="id2fb">
+        </div>
+        <aside class="s5-aside-slidebar">
+            <div id="id2fc">
+                <div class="s5-filterbar-toggle js-filterbar-toggle">
+                    <a href="#id2f0"><i class="icon-filter-1"></i></a>
+                </div>
+                <div class="s5-filterbar-container" id="id2f0">
+
+                    <h2>Filter</h2>
+                    <form id="id2fd" method="post" action="./presentie?34-2.-sidebar-sidebarContent-0-content-form">
+
+
+                        <fieldset>
+
+                            <div id="id2fe">
+
+
+                                <h5>Vak</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:0:controlGroup:controlGroup_body:formField" id="id2f5" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#id2ff&#039;).click();}">
+                                        <option selected="selected" value="">Vak...</option>
+                                        <option value="0">Applicatieontwikkeling</option>
+                                        <option value="1">Beroepsgerichte ontwikkeling</option>
+                                        <option value="2">Beroepsgerichte ontwikkeling</option>
+                                        <option value="3">Beroepspraktijkvorming</option>
+                                        <option value="4">BPV </option>
+                                        <option value="5">BPV lj2</option>
+                                        <option value="6">ENGELS</option>
+                                        <option value="7">Engels A2 </option>
+                                        <option value="8">Engels B1 </option>
+                                        <option value="9">Engels generiek A2 IE - B1 CE</option>
+                                        <option value="10">Gezondheid, bewegen en sport</option>
+                                        <option value="11">Levert een bijdrage aan het ontwikkeltraject</option>
+                                        <option value="12">Levert een product op</option>
+                                        <option value="13">Loopbaan &amp; Burgerschap</option>
+                                        <option value="14">Loopbaan en Burgerschap</option>
+                                        <option value="15">Loopbaan en burgerschap</option>
+                                        <option value="16">NEDERLANDS</option>
+                                        <option value="17">Nederlands 2F </option>
+                                        <option value="18">Nederlands 3F </option>
+                                        <option value="19">Nederlands 3F n4</option>
+                                        <option value="20">Onderhoudt en beheert de applicatie</option>
+                                        <option value="21">Realiseert en test (onderdelen van) een product</option>
+                                        <option value="22">REKENEN</option>
+                                        <option value="23">Rekenen 2F </option>
+                                        <option value="24">Rekenen 3F </option>
+                                        <option value="25">Rekenen 3F n4</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div id="id300">
+
+
+                                <h5>Periode</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:1:controlGroup:controlGroup_body:formField" id="id2f6" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#id2ff&#039;).click();}">
+                                        <option selected="selected" value="0">Huidig schooljaar</option>
+                                        <option value="1">Huidige maand</option>
+                                        <option value="2">Vorige maand</option>
+                                        <option value="3">Huidige week</option>
+                                        <option value="4">Vorige week</option>
+                                        <option value="5">Stageperiode</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div id="id301">
+
+
+                                <h5>Afspraken</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:2:controlGroup:controlGroup_body:formField" id="id2f7" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#id2ff&#039;).click();}">
+                                        <option selected="selected" value="0">Alle afspraken</option>
+                                        <option value="1">Afspraken met vak</option>
+                                        <option value="2">Afspraken zonder vak</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </fieldset>
+
+
+
+                    </form>
+
+                </div>
+            </div>
+        </aside>
+        <section class="content-wrapper js-scroll-wrapper">
+            <div id="id2f1">
+
+            </div>
+
+
+            <div class="content has-sidebar">
+
+                <div class="chart--donut">
+                    <div class="chart--multiple" id="id302">
+                        <div class="chart">
+                            <h2 class="chartTitel" id="id303">Presentie</h2>
+                            <canvas id="id2f8" width="250" height="250"></canvas>
+                            <div id="legendDiv" class="legend"></div>
+                        </div>
+                    </div>
+                    <div class="chart--multiple" id="id304">
+                        <div class="chart">
+                            <h2 class="chartTitel" id="id305">Percentage</h2>
+                            <canvas id="id2f9" width="250" height="250"></canvas>
+                            <div id="legendDiv" class="legend"></div>
+                        </div>
+                    </div>
+                    <div class="chart--multiple" id="id306">
+                        <div class="chart">
+                            <h2 class="chartTitel" id="id307">Stage</h2>
+                            <canvas id="id2fa" width="250" height="250"></canvas>
+                            <div id="legendDiv" class="legend"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+
+            </div>
+
+        </section>
+    </div>
+</div>
+</body>
+</html>
