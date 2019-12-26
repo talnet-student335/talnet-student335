@@ -1,98 +1,215 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Login V3</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+<html>
+<head><script type="text/javascript" src="./wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-2.2.4-ver-1526491824000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.panel.EduArioFeedbackPanel/eduariofeedbackpanel-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-1526491986000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.behaviors.EduArioUIResourceReference/EduArioUI-ver-1576677976000.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="EduArte Portalen" />
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="/eduarte/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/eduarte/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="/eduarte/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/eduarte/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/eduarte/assets/img/safari-pinned-tab.svg"
+          color="#5bbad5">
+    <link rel="shortcut icon" href="/eduarte/assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config"
+          content="/assets/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="EduArte Portalen" />
+    <meta name="author" content="Iddink Group" />
+    <title>Dashboard - EduArte Portalen</title>
+    <!-- Page class: class nl.topicus.eduario.web.pages.StudentHomePage -->
+    <link rel="stylesheet" type="text/css" href="./wicket/resource/assets.AssetsResourceReferenceMarker/stylesheets/styles-ver-1576677976000.css" />
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.pages.AbstractEduArioPage/jquery.viewport.mini-ver-1576677976000.js"></script>
+    <script type="text/javascript" >
+        /*<![CDATA[*/
+        Wicket.Event.add(window, "domready", function(event) {
+            $('#id55').eduArioFeedback();;
+            $('#id56').menuToggle();;
+            $('#id57').menuToggle();;
+            Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+            ;});
+        /*]]>*/
+    </script>
 </head>
 <body>
-	
-	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form" action="eduarte/index.html">
-					<span class="login100-form-logo">
-						<i class="zmdi zmdi-landscape"></i>
-					</span>
+<div class="l-container">
+    <nav class="navigation navigation--student">
+        <div class="navigation-header">
+            <div class="navigation-header--logo">
+                <a><img src="./wicket/resource/assets.AssetsResourceReferenceMarker/img/logo-eduarte-ver-1576677958000.svg" alt="EduArtelogo"/></a>
+            </div>
+            <div class="omgevingIndicator productieomgeving"></div>
+            <i class="navigation-header--close-navigation js-navigation flaticon x-1" id="id56"></i>
+        </div>
+        <div class="navigation-items">
+            <ul class="navigation-items--main">
 
-					<span class="login100-form-title p-b-34 p-t-27">
-						Log in
-					</span>
+                <li class="is-selected">
 
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Gebruikersnaam">
-						<span class="focus-input100" data-placeholder="&#xf207;"></span>
-					</div>
+                    <a href="./index.html" title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
 
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Wachtwoord">
-						<span class="focus-input100" data-placeholder="&#xf191;"></span>
-					</div>
 
-					<div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						<label class="label-checkbox100" for="ckb1">
-							Onthoud mij
-						</label>
-					</div>
+                </li><li>
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
+                <a href="./agenda.html" title="Agenda"><i class="flaticon calendar-4"></i>Agenda</a>
 
-					<div class="text-center p-t-90">
-						<a class="txt1" href="#">
-							Wachtwoord vergeten?
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	
 
-	<div id="dropDownSelect1"></div>
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+            </li><li>
 
+                <a href="./presentie.overzicht/overzicht.html" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
+
+
+            </li><li>
+
+                <a href="stage.html" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
+
+
+            </li><li>
+
+                <a href="./opleiding/opleiding.html" title="Studie"><i class="flaticon building-1"></i>Studie</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="werklijst.html" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="resultaten.html" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
+
+
+            </li>
+
+            </ul>
+        </div>
+        <div class="navigation-footer">
+            <ul>
+                <li>
+                    <a href="./account.html" title="Profiel">
+                        <i class="flaticon user-2"></i>
+                    </a>
+                </li><li>
+                <a href="..?5-3.-menu-footer-2-uitloggen" title="Uitloggen">
+                    <i class="flaticon logout"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="l-flex-content">
+
+        <header class="header">
+            <div class="header-toolbar">
+                <i class="header-toolbar--open-navigation js-navigation flaticon menu-2" id="id57"></i>
+                <h1>
+
+                </h1>
+
+            </div>
+
+        </header>
+
+        <div class="popover defaultPopoverWidth" id="id59">
+        </div>
+        <aside class="s5-aside-slidebar">
+            <div id="id5a" style="display:none"></div>
+        </aside>
+        <section class="content-wrapper js-scroll-wrapper has-small-header">
+            <div id="id55">
+
+            </div>
+
+
+            <div class="content l-medium">
+
+                <div class="now--wrapper">
+
+                    <ul class="blocks">
+                        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                        <li></li><li></li><li></li><li></li><li></li><li></li>
+                    </ul>
+                    <h1>Goedemiddag Zapp</h1>
+
+                    <div id="id5b"><div id="id5c">
+                        <ul id="id5d">
+                            <li class="now" id="idb4">
+
+                                <div class="now--body is-now">
+                                    <h4><strong>Nu</strong> Kerstvakantie  MT2SNO9C,MT2SNO9B,MT2SNO9A,MMVHAV1B,MICHAV1B,MZO2HAVO,MT4PRO1A,MT2BPV1A,MT2HAV1A,MMVHAV1A,MWZFSW1B,MICHAV1A,MZO9HAVO,MT2ETO9B,MZOVKO6B,A16OA1,A16PG2,A16PG1,MICSPO9C,MICSPO9B,MICSPO9A,MMVAOO9D,MICBPV1A,MZO7AINT,MZOV2HBO,MZO92INT,MZOV9HBO,Bak</h4>
+
+                                    <p>Met dhr. Smit, mevr. Inacio, mevr.  Wijte, dhr.  Veldwijk, dhr. Roskam, dhr. Smeets, mevr.  Smit - van Kempen, dhr. van der Steen, mevr. Verbaas, dhr. Korswagen, dhr. Weller, dhr. Plukker, dhr. Verwey, mevr.  Toujani, dhr. Muijs, dhr.  Bliekendaal, mevr. Witlox, mevr. Harrell, dhr. de Haan, mevr. Thomas, dhr.  Kieft, dhr. Loos, mevr. Westerhof, dhr. Steenis, mevr. Vaes, mevr.  Rietveld, dhr.  Heldoorn, mevr. Evers, dhr. Gigli, dhr. Kramer, dhr. Boundati, mevr.  Bakker, mevr. Joosten, dhr.  Waterman, mevr. Ter Veer, mevr. Greiner, mevr. van der Meulen, mevr. Joemmanbaks, dhr. Schaap, mevr. Swibben, mevr. Wout, mevr.  Wiedeman, dhr. Neefjes, mevr. Borst, mevr. de Lange, dhr. Driessen, dhr. van Eys, dhr. Heinis, dhr.  Evenhuis, dhr. Schmitz, mevr. Rombley, mevr. Schattevo - Roep, mevr. Visser, dhr. Vanfrachem, mevr. Valk, dhr. Tuin, dhr. Timmer, mevr. Sairras - Canterburg, dhr. Pruijssen, mevr. Langaman, mevr. Korsuize, mevr. Koelewijn, mevr. Heufke Kantelaar, mevr. Joustra - Dijk, mevr. Havinga, mevr. Habibe, dhr. Greve, mevr. Gough, dhr. Fikenscher, mevr. van Eys - de Vries, mevr. Dekker, mevr. Banis, mevr. Anches, mevr. Alvares, mevr. Albers, dhr. Wolven, mevr. Wiekeraad, mevr. Wiegers, mevr. Vashchenko, mevr. Pitambersingh, dhr. van Pelt, mevr. Koel, mevr. Hofmeester - Beijer, dhr. Hendriks, mevr. Garnier, dhr. Fingal, mevr. van Dijk - Ziel, mevr. Bouwe - Day, mevr. Boon, mevr. van Aalst, dhr. Verschoor, dhr. Chahbari, mevr. Boëtius, dhr. Anroedh, dhr. Timperley, dhr. Smid, mevr.  Postma, dhr. Obbema, dhr. Hopman, dhr. Heijkoop, dhr. Groot, dhr. de Graaf, dhr. Dumond, dhr. Broekhuijzen, dhr. Bon, dhr. van Beek, dhr. Bakker, dhr. Zijlstra, dhr. Wijnands, dhr. de Vries, mevr. Videva, mevr. Spier, mevr. Smit, dhr. Siewers, mevr. Ophuis, dhr. Lap, mevr. Hamar de la Brethonière, dhr. van Gelder de Neufville, mevr. Dirkse, mevr. Bouman, dhr. Vloor, mevr. Vosjan, mevr. de Stoppelaar, mevr. Stekelenburg, dhr. Ruijzenaars, dhr. de Paauw, dhr.  Hartong, dhr. Van Dijk, dhr. Blankendaal</p>
+                                    <p>De afspraak duurt tot 22:15</p>
+
+                                </div>
+                                <figure class="now--figure" style="background-image: url(&#039;assets/img/dashboard/during-class.png&#039;);"></figure>
+
+
+
+                            </li><li class="now" id="idb5">
+
+                            <div class="now--body">
+                                <h4>Vrij over <strong>9 uur en 2 minuten</strong></h4>
+
+
+                            </div>
+                            <figure class="now--figure" style="background-image: url(&#039;assets/img/dashboard/free-time-student-winter.png&#039;);"></figure>
+
+
+
+                        </li>
+                            <li><hr></li>
+                            <li class="now--tomorrow is-clickable" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href=&#039;./?5-3.0-dashboard-content-itemContainer-volgendeDag&#039;; } ;return false">
+
+                                <div class="now--body">
+
+
+                                    <i class="flaticon moon-1"></i>
+                                    <p>Morgen begin je om 8:30.</p>
+
+                                </div>
+
+
+
+
+                            </li>
+                        </ul>
+                    </div></div>
+                </div>
+
+            </div>
+            <div class="content">
+
+            </div>
+
+        </section>
+    </div>
+</div>
 </body>
 </html>

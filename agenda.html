@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript" src="./wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-2.2.4-ver-1526491824000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.panel.EduArioFeedbackPanel/eduariofeedbackpanel-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery-ver-1526491986000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.behaviors.EduArioUIResourceReference/EduArioUI-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.cobra.web.components.choice.AbstractAjaxDropDownChoice/dropdownchoice-ver-1574233124000.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+        /*<![CDATA[*/
+        Wicket.Ajax.baseUrl="agenda.html?9";
+        /*]]>*/
+    </script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.panel.SidebarPanel/slidebar-ver-1576677976000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/org.wicketstuff.wiquery.ui.JQueryUIJavaScriptResourceReference/jquery-ui-ver-1533200756000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/org.wicketstuff.wiquery.ui.datepicker.DatePickerLanguageResourceReference/i18n/datepicker-nl-ver-1533200756000.js"></script>
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.components.form.EnumEditPanel/EnumEditPanel-ver-1576677976000.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="EduArte Portalen" />
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="/eduarte/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/eduarte/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="/eduarte/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/eduarte/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="/eduarte/assets/img/safari-pinned-tab.svg"
+          color="#5bbad5">
+    <link rel="shortcut icon" href="/eduarte/assets/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config"
+          content="/assets/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="EduArte Portalen" />
+    <meta name="author" content="Iddink Group" />
+    <title>Agenda - EduArte Portalen</title>
+    <!-- Page class: class nl.topicus.eduario.web.pages.agenda.AgendaPage -->
+    <link rel="stylesheet" type="text/css" href="./wicket/resource/assets.AssetsResourceReferenceMarker/stylesheets/styles-ver-1576677976000.css" />
+    <script type="text/javascript" src="./wicket/resource/nl.topicus.eduario.web.pages.AbstractEduArioPage/jquery.viewport.mini-ver-1576677976000.js"></script>
+    <script type="text/javascript" >
+        /*<![CDATA[*/
+        Wicket.Event.add(window, "domready", function(event) {
+            $('#idb9').eduArioFeedback();;
+            $('#idba').menuToggle();;
+            $('#idbb').menuToggle();;
+            $('#idbc').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./agenda.html?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"idbc","dep":[function(attrs){return Wicket.Form.serializeElement('idbc')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-0-controlGroup-controlGroup_body-formField","m":"POST","c":"idbc","dep":[function(attrs){return Wicket.Form.serializeElement('idbc')}],"e":"change"});;
+            $('#idbd').dropDownChoice({autoselect: false, ajax: function () {
+                    var attrs = {"u":"./agenda.html?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"idbd","dep":[function(attrs){return Wicket.Form.serializeElement('idbd')}]};
+                    var params = [];
+                    attrs.ep = params.concat(attrs.ep || []);
+                    Wicket.Ajax.ajax(attrs);
+                }
+            });;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.1-sidebar-sidebarContent-0-content-form-fieldset-fieldSetMarkup-inputFields-1-controlGroup-controlGroup_body-formField","m":"POST","c":"idbd","dep":[function(attrs){return Wicket.Form.serializeElement('idbd')}],"e":"change"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-sidebar-sidebarContent-0-content-form-zoeken","m":"POST","c":"idbf","f":"idbe","sc":"zoeken","e":"click"});;
+            $('#idc0').datepicker({onClose: function(dateText, inst) {
+                    $(this).blur();
+                }, dateFormat: 'dd-mm-yy'});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-filter-datum","m":"POST","c":"idc0","e":"change"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-filter-weergaveKiezer-choicesContainer-enumHiddenField","m":"POST","c":"idc1","e":"change"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-1-afspraken-0","c":"idc2","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-2-afspraken-0","c":"idc3","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-3-afspraken-0","c":"idc4","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-4-afspraken-0","c":"idc5","e":"click"});;
+            Wicket.Ajax.ajax({"u":"./agenda.html?9-2.0-agenda-dagenPanel-dagen-5-afspraken-0","c":"idc6","e":"click"});;
+            $(window).scroll(function () {$('.lead').animate({ top: $(this).scrollTop() - 45 }, { duration: 0, queue: false }); });;
+            Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+            ;});
+        /*]]>*/
+    </script>
+</head>
+<body>
+<div class="l-container">
+    <nav class="navigation navigation--student">
+        <div class="navigation-header">
+            <div class="navigation-header--logo">
+                <a><img src="./wicket/resource/assets.AssetsResourceReferenceMarker/img/logo-eduarte-ver-1576677958000.svg" alt="EduArtelogo"/></a>
+            </div>
+            <div class="omgevingIndicator productieomgeving"></div>
+            <i class="navigation-header--close-navigation js-navigation flaticon x-1" id="idba"></i>
+        </div>
+        <div class="navigation-items">
+            <ul class="navigation-items--main">
+
+                <li>
+
+                    <a href=".." title="Dashboard"><i class="flaticon house"></i>Dashboard</a>
+
+
+                </li><li class="is-selected">
+
+                <a href="./agenda.html" title="Agenda"><i class="flaticon calendar-4"></i>Agenda</a>
+
+
+            </li><li>
+
+                <a href="./presentie.overzicht/overzicht.html" title="Presentie"><i class="flaticon calendar-2"></i>Presentie</a>
+
+
+            </li><li>
+
+                <a href="stage.html" title="Stage"><i class="flaticon suitcase-1"></i>Stage</a>
+
+
+            </li><li>
+
+                <a href="./opleiding/opleiding.html" title="Studie"><i class="flaticon building-1"></i>Studie</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="werklijst.html" title="Werklijst"><i class="flaticon open-book-2"></i>Werklijst</a>
+
+
+            </li><li>
+
+
+
+
+            </li><li>
+
+                <a href="resultaten.html" title="Resultaten"><i class="flaticon menu-list-1"></i>Resultaten</a>
+
+
+            </li>
+
+            </ul>
+        </div>
+        <div class="navigation-footer">
+            <ul>
+                <li>
+                    <a href="account.html" title="Profiel">
+                        <i class="flaticon user-2"></i>
+                    </a>
+                </li><li>
+                <a href="./agenda.html?9-2.-menu-footer-2-uitloggen" title="Uitloggen">
+                    <i class="flaticon logout"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="l-flex-content">
+
+        <header class="header">
+            <div class="header-toolbar">
+                <i class="header-toolbar--open-navigation js-navigation flaticon menu-2" id="idbb"></i>
+                <h1>
+
+
+
+                    <span class="is-fixed is-lastcrumb is-single">Agenda</span>
+
+
+
+                </h1>
+
+            </div>
+
+        </header>
+
+        <div class="popover defaultPopoverWidth" id="idc8">
+        </div>
+        <aside class="s5-aside-slidebar">
+            <div id="idc9">
+                <div class="s5-filterbar-toggle js-filterbar-toggle">
+                    <a href="#idb8"><i class="icon-filter-1"></i></a>
+                </div>
+                <div class="s5-filterbar-container" id="idb8">
+
+                    <h2>Filter</h2>
+                    <form id="idbe" method="post" action="./agenda.html?9-2.-sidebar-sidebarContent-0-content-form"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"/><input type="submit" tabindex="-1" name="zoeken" onclick=" var b=document.getElementById('idbf'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = Wicket.bind(b.onclick, b)(); if (r != false) b.click(); } else { b.click(); };  return false;"  /></div>
+
+
+                        <fieldset>
+
+                            <div id="idca">
+
+
+                                <h5>Lesnotitie</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:0:controlGroup:controlGroup_body:formField" id="idbc" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#idbf&#039;).click();}">
+                                        <option selected="selected" value="">Maak je keuze...</option>
+                                        <option value="0">Ja</option>
+                                        <option value="1">Nee</option>
+                                        <option value="2">Beide</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div id="idcb">
+
+
+                                <h5>Huiswerk</h5>
+
+
+
+
+
+                                <div class="form-select">
+                                    <select class="s5-input-select" name="fieldset:fieldSetMarkup:inputFields:1:controlGroup:controlGroup_body:formField" id="idbd" onkeypress="if ((window.event &amp;&amp; window.event.keyCode==13)||event.which==13){jQuery(&#039;#idbf&#039;).click();}">
+                                        <option selected="selected" value="">Maak je keuze...</option>
+                                        <option value="0">Alles</option>
+                                        <option value="1">Huiswerk</option>
+                                        <option value="2">Toets</option>
+                                        <option value="3">Huiswerk en/of toets</option>
+                                    </select>
+                                    <i class="flaticon down-2"></i>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <input type="button" class="is-hidden" id="idbf" value="Zoeken"></input>
+                    </form>
+
+                </div>
+            </div>
+        </aside>
+        <section class="content-wrapper js-scroll-wrapper has-small-header">
+            <div id="idb9">
+
+            </div>
+
+
+            <div class="content has-no-padding">
+
+                <div class="agenda-filter time-filter">
+                    <div class="filter--inner">
+                        <div style="margin: auto 0px; display: flex">
+                            <a class="time-filter--left" href="./agenda.html?9-2.-filter-terug"><i class="flaticon left-square-1"></i></a>
+                            <a class="time-filter--right" href="./agenda.html?9-2.-filter-vooruit"><i class="flaticon right-square-1"></i></a>
+                        </div>
+                        <div class="popover--field datepicker">
+                            <i class="flaticon calendar-2 datepicker"></i>
+                            <input type="text" value="25-12-2019" name="filter:datum" id="idc0" class=""/>
+                        </div>
+                        <div class="popover-tabs">
+                            <div class="popover-tabs" id="idcc">
+                                <input type="hidden" value="Week" name="filter:weergaveKiezer:choicesContainer:enumHiddenField" id="idc1" class=""></input>
+                                <ul>
+                                    <li data-enumvalue="Lijst"><a>Lijst</a></li><li data-enumvalue="Werkweek"><a>Werkweek</a></li><li class="is-selected" data-enumvalue="Week"><a>Week</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="idcd" style="display:none"></div>
+                    </div>
+                </div>
+
+                <div class="agenda">
+
+                    <div class="agenda--time">
+                        <h4>&nbsp;</h4>
+                        <ul>
+                            <li>
+                                <span>07:00</span>
+                            </li><li>
+                            <span>08:00</span>
+                        </li><li>
+                            <span>09:00</span>
+                        </li><li>
+                            <span>10:00</span>
+                        </li><li>
+                            <span>11:00</span>
+                        </li><li>
+                            <span>12:00</span>
+                        </li><li>
+                            <span>13:00</span>
+                        </li><li>
+                            <span>14:00</span>
+                        </li><li>
+                            <span>15:00</span>
+                        </li><li>
+                            <span>16:00</span>
+                        </li><li>
+                            <span>17:00</span>
+                        </li><li>
+                            <span>18:00</span>
+                        </li><li>
+                            <span>19:00</span>
+                        </li><li>
+                            <span>20:00</span>
+                        </li><li>
+                            <span>21:00</span>
+                        </li><li>
+                            <span>22:00</span>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="agenda--days has-horizontal-scroll" id="id20">
+                        <hr class="agenda--present-time" id="idf" style="top:743px;"></hr>
+                        <div class="agenda--day" id="id10">
+
+                            <h4 class="lead">ma 23 dec</h4>
+
+                            <ul>
+                                <li class="js-agenda-detail agenda--appointment" id="id1b" style="top:162px; height:1485px; left:0%; width: 100%;">
+                                    <div>
+                                        <span class="is-subject">Kerstvakantie  MT2SNO9C,MT2SNO9B,MT2SNO9A,MMVHAV1B,MICHAV1B,MZO2HAVO,MT4PRO1A,MT2BPV1A,MT2HAV1A,MMVHAV1A,MWZFSW1B,MICHAV1A,MZO9HAVO,MT2ETO9B,MZOVKO6B,A16OA1,A16PG2,A16PG1,MICSPO9C,MICSPO9B,MICSPO9A,MMVAOO9D,MICBPV1A,MZO7AINT,MZOV2HBO,MZO92INT,MZOV9HBO,Bak</span>
+                                        <span class="is-location"></span>
+                                        <span class="is-participant">SMITT, INACS, WIJTS, VELDE, ROSKA, SMEES, KEMPJ, STEER1, VERBL, KORSR, WELLB, PLUKG, VEY, TOUJM, MUIJR, BLIEW, WITLL, HARRA, HAANL2, THOMS, WDKT, LOOSR, WESTI, STEER, VAESM, RIETM2, HELDE, EVERC1, GIGLL, KRAMG, bounf, BAKKC1, JOOSI1, WATEF, VEERE1, GREIM, MEULH, VAJS, SCHAB, SWIBK, WTG, WDN, NEE, MNBT, JERM, JDR, EYSNO, HEINP, EVENS, SCHMJ, ROMBM, SCHAS, VISSM, VANFE, VALKY, TUIND, TIMMJ, SAIRM, PRUIR, LANGM, KORSF, KOELH, KANTL, JOUSR, HAVIH, HABIM, GREVB, GOUGK, FIKED, EYSSA, DEKKJ, BANIS, ANCHC, ALVAH, ALBES, WOLVR, WIEKR, WIEGJ, VASHL, PITAV, PELTJ, KOELE, HOFMC, HENDR, GARNM, FINGR, DIJKI, BOUWL, BOONM, AALSF, VERSP, CHAHM, BOETA, ANROR, TIMPF, SMIDE, POSTK, OBBER, HOPMR, HEIJL, GROOT1, GRAAB, DUMOH, BROEF, BONOS, BEEKR, BAKKP, ZIJLF, WIJNM, VRIEP, VIDEA, SPIEC, SMITE, SIEWJ, OPHUM, LAPFR, HAMAB, GELDM, DIRKE, BOUMM, VLOOB, VOSJM1, STOPC, STEKM, RUIJG, PAAUC, HARTA, DIJKK, BLAN</span>
+                                    </div>
+
+                                    <p class="agenda-icons">
+
+
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div><div class="agenda--day" id="id27">
+
+                        <h4 class="lead">di 24 dec</h4>
+
+                        <ul>
+                            <li class="js-agenda-detail agenda--appointment" id="id1c" style="top:162px; height:1485px; left:0%; width: 100%;">
+                                <div>
+                                    <span class="is-subject">Kerstvakantie  MT2SNO9C,MT2SNO9B,MT2SNO9A,MMVHAV1B,MICHAV1B,MZO2HAVO,MT4PRO1A,MT2BPV1A,MT2HAV1A,MMVHAV1A,MWZFSW1B,MICHAV1A,MZO9HAVO,MT2ETO9B,MZOVKO6B,A16OA1,A16PG2,A16PG1,MICSPO9C,MICSPO9B,MICSPO9A,MMVAOO9D,MICBPV1A,MZO7AINT,MZOV2HBO,MZO92INT,MZOV9HBO,Bak</span>
+                                    <span class="is-location"></span>
+                                    <span class="is-participant">SMITT, INACS, WIJTS, VELDE, ROSKA, SMEES, KEMPJ, STEER1, VERBL, KORSR, WELLB, PLUKG, VEY, TOUJM, MUIJR, BLIEW, WITLL, HARRA, HAANL2, THOMS, WDKT, LOOSR, WESTI, STEER, VAESM, RIETM2, HELDE, EVERC1, GIGLL, KRAMG, bounf, BAKKC1, JOOSI1, WATEF, VEERE1, GREIM, MEULH, VAJS, SCHAB, SWIBK, WTG, WDN, NEE, MNBT, JERM, JDR, EYSNO, HEINP, EVENS, SCHMJ, ROMBM, SCHAS, VISSM, VANFE, VALKY, TUIND, TIMMJ, SAIRM, PRUIR, LANGM, KORSF, KOELH, KANTL, JOUSR, HAVIH, HABIM, GREVB, GOUGK, FIKED, EYSSA, DEKKJ, BANIS, ANCHC, ALVAH, ALBES, WOLVR, WIEKR, WIEGJ, VASHL, PITAV, PELTJ, KOELE, HOFMC, HENDR, GARNM, FINGR, DIJKI, BOUWL, BOONM, AALSF, VERSP, CHAHM, BOETA, ANROR, TIMPF, SMIDE, POSTK, OBBER, HOPMR, HEIJL, GROOT1, GRAAB, DUMOH, BROEF, BONOS, BEEKR, BAKKP, ZIJLF, WIJNM, VRIEP, VIDEA, SPIEC, SMITE, SIEWJ, OPHUM, LAPFR, HAMAB, GELDM, DIRKE, BOUMM, VLOOB, VOSJM1, STOPC, STEKM, RUIJG, PAAUC, HARTA, DIJKK, BLAN</span>
+                                </div>
+
+                                <p class="agenda-icons">
+
+
+                                </p>
+
+                            </li>
+                        </ul>
+                    </div><div class="agenda--day" id="id28">
+
+                        <h4 class="lead">wo 25 dec</h4>
+
+                        <ul>
+                            <li class="js-agenda-detail agenda--appointment" id="id1d" style="top:162px; height:1485px; left:0%; width: 100%;">
+                                <div>
+                                    <span class="is-subject">Kerstvakantie  MT2SNO9C,MT2SNO9B,MT2SNO9A,MMVHAV1B,MICHAV1B,MZO2HAVO,MT4PRO1A,MT2BPV1A,MT2HAV1A,MMVHAV1A,MWZFSW1B,MICHAV1A,MZO9HAVO,MT2ETO9B,MZOVKO6B,A16OA1,A16PG2,A16PG1,MICSPO9C,MICSPO9B,MICSPO9A,MMVAOO9D,MICBPV1A,MZO7AINT,MZOV2HBO,MZO92INT,MZOV9HBO,Bak</span>
+                                    <span class="is-location"></span>
+                                    <span class="is-participant">SMITT, INACS, WIJTS, VELDE, ROSKA, SMEES, KEMPJ, STEER1, VERBL, KORSR, WELLB, PLUKG, VEY, TOUJM, MUIJR, BLIEW, WITLL, HARRA, HAANL2, THOMS, WDKT, LOOSR, WESTI, STEER, VAESM, RIETM2, HELDE, EVERC1, GIGLL, KRAMG, bounf, BAKKC1, JOOSI1, WATEF, VEERE1, GREIM, MEULH, VAJS, SCHAB, SWIBK, WTG, WDN, NEE, MNBT, JERM, JDR, EYSNO, HEINP, EVENS, SCHMJ, ROMBM, SCHAS, VISSM, VANFE, VALKY, TUIND, TIMMJ, SAIRM, PRUIR, LANGM, KORSF, KOELH, KANTL, JOUSR, HAVIH, HABIM, GREVB, GOUGK, FIKED, EYSSA, DEKKJ, BANIS, ANCHC, ALVAH, ALBES, WOLVR, WIEKR, WIEGJ, VASHL, PITAV, PELTJ, KOELE, HOFMC, HENDR, GARNM, FINGR, DIJKI, BOUWL, BOONM, AALSF, VERSP, CHAHM, BOETA, ANROR, TIMPF, SMIDE, POSTK, OBBER, HOPMR, HEIJL, GROOT1, GRAAB, DUMOH, BROEF, BONOS, BEEKR, BAKKP, ZIJLF, WIJNM, VRIEP, VIDEA, SPIEC, SMITE, SIEWJ, OPHUM, LAPFR, HAMAB, GELDM, DIRKE, BOUMM, VLOOB, VOSJM1, STOPC, STEKM, RUIJG, PAAUC, HARTA, DIJKK, BLAN</span>
+                                </div>
+
+                                <p class="agenda-icons">
+
+
+                                </p>
+
+                            </li>
+                        </ul>
+                    </div><div class="agenda--day is-today" id="id29">
+
+                        <h4 class="lead">do 26 dec</h4>
+
+                        <ul>
+                            <li class="js-agenda-detail agenda--appointment" id="id1e" style="top:162px; height:1485px; left:0%; width: 100%;">
+                                <div>
+                                    <span class="is-subject">Kerstvakantie  MT2SNO9C,MT2SNO9B,MT2SNO9A,MMVHAV1B,MICHAV1B,MZO2HAVO,MT4PRO1A,MT2BPV1A,MT2HAV1A,MMVHAV1A,MWZFSW1B,MICHAV1A,MZO9HAVO,MT2ETO9B,MZOVKO6B,A16OA1,A16PG2,A16PG1,MICSPO9C,MICSPO9B,MICSPO9A,MMVAOO9D,MICBPV1A,MZO7AINT,MZOV2HBO,MZO92INT,MZOV9HBO,Bak</span>
+                                    <span class="is-location"></span>
+                                    <span class="is-participant">SMITT, INACS, WIJTS, VELDE, ROSKA, SMEES, KEMPJ, STEER1, VERBL, KORSR, WELLB, PLUKG, VEY, TOUJM, MUIJR, BLIEW, WITLL, HARRA, HAANL2, THOMS, WDKT, LOOSR, WESTI, STEER, VAESM, RIETM2, HELDE, EVERC1, GIGLL, KRAMG, bounf, BAKKC1, JOOSI1, WATEF, VEERE1, GREIM, MEULH, VAJS, SCHAB, SWIBK, WTG, WDN, NEE, MNBT, JERM, JDR, EYSNO, HEINP, EVENS, SCHMJ, ROMBM, SCHAS, VISSM, VANFE, VALKY, TUIND, TIMMJ, SAIRM, PRUIR, LANGM, KORSF, KOELH, KANTL, JOUSR, HAVIH, HABIM, GREVB, GOUGK, FIKED, EYSSA, DEKKJ, BANIS, ANCHC, ALVAH, ALBES, WOLVR, WIEKR, WIEGJ, VASHL, PITAV, PELTJ, KOELE, HOFMC, HENDR, GARNM, FINGR, DIJKI, BOUWL, BOONM, AALSF, VERSP, CHAHM, BOETA, ANROR, TIMPF, SMIDE, POSTK, OBBER, HOPMR, HEIJL, GROOT1, GRAAB, DUMOH, BROEF, BONOS, BEEKR, BAKKP, ZIJLF, WIJNM, VRIEP, VIDEA, SPIEC, SMITE, SIEWJ, OPHUM, LAPFR, HAMAB, GELDM, DIRKE, BOUMM, VLOOB, VOSJM1, STOPC, STEKM, RUIJG, PAAUC, HARTA, DIJKK, BLAN</span>
+                                </div>
+
+                                <p class="agenda-icons">
+
+
+                                </p>
+
+                            </li>
+                        </ul>
+                    </div><div class="agenda--day" id="id2a">
+
+                        <h4 class="lead">vr 27 dec</h4>
+
+                        <ul>
+                            <li class="js-agenda-detail agenda--appointment" id="id1f" style="top:162px; height:1485px; left:0%; width: 100%;">
+                                <div>
+                                    <span class="is-subject">Kerstvakantie  MT2SNO9C,MT2SNO9B,MT2SNO9A,MMVHAV1B,MICHAV1B,MZO2HAVO,MT4PRO1A,MT2BPV1A,MT2HAV1A,MMVHAV1A,MWZFSW1B,MICHAV1A,MZO9HAVO,MT2ETO9B,MZOVKO6B,A16OA1,A16PG2,A16PG1,MICSPO9C,MICSPO9B,MICSPO9A,MMVAOO9D,MICBPV1A,MZO7AINT,MZOV2HBO,MZO92INT,MZOV9HBO,Bak</span>
+                                    <span class="is-location"></span>
+                                    <span class="is-participant">SMITT, INACS, WIJTS, VELDE, ROSKA, SMEES, KEMPJ, STEER1, VERBL, KORSR, WELLB, PLUKG, VEY, TOUJM, MUIJR, BLIEW, WITLL, HARRA, HAANL2, THOMS, WDKT, LOOSR, WESTI, STEER, VAESM, RIETM2, HELDE, EVERC1, GIGLL, KRAMG, bounf, BAKKC1, JOOSI1, WATEF, VEERE1, GREIM, MEULH, VAJS, SCHAB, SWIBK, WTG, WDN, NEE, MNBT, JERM, JDR, EYSNO, HEINP, EVENS, SCHMJ, ROMBM, SCHAS, VISSM, VANFE, VALKY, TUIND, TIMMJ, SAIRM, PRUIR, LANGM, KORSF, KOELH, KANTL, JOUSR, HAVIH, HABIM, GREVB, GOUGK, FIKED, EYSSA, DEKKJ, BANIS, ANCHC, ALVAH, ALBES, WOLVR, WIEKR, WIEGJ, VASHL, PITAV, PELTJ, KOELE, HOFMC, HENDR, GARNM, FINGR, DIJKI, BOUWL, BOONM, AALSF, VERSP, CHAHM, BOETA, ANROR, TIMPF, SMIDE, POSTK, OBBER, HOPMR, HEIJL, GROOT1, GRAAB, DUMOH, BROEF, BONOS, BEEKR, BAKKP, ZIJLF, WIJNM, VRIEP, VIDEA, SPIEC, SMITE, SIEWJ, OPHUM, LAPFR, HAMAB, GELDM, DIRKE, BOUMM, VLOOB, VOSJM1, STOPC, STEKM, RUIJG, PAAUC, HARTA, DIJKK, BLAN</span>
+                                </div>
+
+                                <p class="agenda-icons">
+
+
+                                </p>
+
+                            </li>
+                        </ul>
+                    </div><div class="agenda--day" id="id2b">
+
+                        <h4 class="lead">za 28 dec</h4>
+
+                        <ul>
+
+                        </ul>
+                    </div><div class="agenda--day" id="id2c">
+
+                        <h4 class="lead">zo 29 dec</h4>
+
+                        <ul>
+
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="content">
+
+            </div>
+
+        </section>
+    </div>
+</div>
+</body>
+</html>
